@@ -61,8 +61,6 @@ ul.aboutMeButtons li .imageContainer {
 
 ul.aboutMeButtons li .imageContainer:hover {
 	cursor: pointer;
-	border-width: 2px;
-	padding: 2px;
 }
 
 ul.aboutMeButtons li .imageContainer img {

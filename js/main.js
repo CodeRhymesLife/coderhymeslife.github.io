@@ -42,15 +42,19 @@ $(window).load(function () {
             "</li>");
         $(".aboutMeButtons").append(aboutMeButton);
 
-        var description = $("<div>" + aboutMeDataPoint.descriptionHtml + "</div>");
-        $(".aboutMeDescriptions").append(description);
-
         aboutMeButton.click(function () {
-            // Hide any currently showing descriptions
-            $(".aboutMeDescriptions div").hide();
-
-            // Show the description for the selected button
-            description.show();
+            $('#aboutMeDescriptionmodal').data("aboutMeData", aboutMeDataPoint)
+            $('#aboutMeDescriptionmodal').modal('show');
         });
+    });
+
+    // When the model is shown show the about me data
+    $('#aboutMeDescriptionmodal').on('show.bs.modal', function (event) {
+        var modal = $(this)
+        var aboutMeData = modal.data("aboutMeData");
+
+        // Add the title and description
+        modal.find('.modal-title').text(aboutMeData.title);
+        modal.find('.modal-body').html(aboutMeData.descriptionHtml);
     });
 });
