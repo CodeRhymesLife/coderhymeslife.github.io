@@ -1,7 +1,6 @@
 var aboutMeData = [
     {
         title: "Education",
-        image: "education.jpg",
         description: {
             contentRows: [
                 {
@@ -25,7 +24,6 @@ var aboutMeData = [
     },
     {
         title: "Research",
-        image: "research.png",
         description: {
             contentRows: [
                 {
@@ -49,7 +47,6 @@ var aboutMeData = [
     },
     {
         title: "Home",
-        image: "home.jpg",
         description: {
             contentRows: [
                 {
@@ -61,7 +58,6 @@ var aboutMeData = [
     },
     {
         title: "Code",
-        image: "code.png",
         description: {
             contentRows: [
                 {
@@ -73,7 +69,6 @@ var aboutMeData = [
     },
     {
         title: "Sports",
-        image: "soccerBall.png",
         description: {
             contentRows: [
                 {
@@ -85,7 +80,6 @@ var aboutMeData = [
     },
     {
         title: "Gaming",
-        image: "nintendo-controller.jpg",
         description: {
             contentRows: [
                 {
@@ -102,8 +96,8 @@ $(window).load(function () {
     aboutMeData.forEach(function (aboutMeDataPoint) {
         var aboutMeButton = $(
             "<li>" +
-                "<div class='imageContainer'>" +
-                    "<img src='images/" + aboutMeDataPoint.image + "' />" +
+                "<div class='textContainer'>" +
+                    aboutMeDataPoint.title +
                 "</div>" +
             "</li>");
         $(".aboutMeButtons").append(aboutMeButton);

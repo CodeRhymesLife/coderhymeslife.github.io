@@ -5,7 +5,7 @@ html, body {
 }
 
 p {
-	font-size: 32px;
+	font-size: 24px;
 }
 
 h1 {
@@ -38,6 +38,7 @@ ul.aboutMeButtons {
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	font-size: 18px;
 }
 
 ul.aboutMeButtons li {
@@ -46,9 +47,11 @@ ul.aboutMeButtons li {
 	width: 16%;
 }
 
-ul.aboutMeButtons li .imageContainer {
+ul.aboutMeButtons li .textContainer {
 	margin: 0 auto;
-	padding: 3px;
+	padding: 10px;
+	width: 90%;
+	text-align: center;
 
 	border: 1px solid black;
 	-webkit-border-radius: 12px; 
@@ -56,17 +59,8 @@ ul.aboutMeButtons li .imageContainer {
 	border-radius: 12px;
 }
 
-ul.aboutMeButtons li .imageContainer:hover {
+ul.aboutMeButtons li .textContainer:hover {
 	cursor: pointer;
-}
-
-ul.aboutMeButtons li .imageContainer img {
-	display: block;
-    margin: 0 auto;
-}
-
-.aboutMeDescriptions * {
-	display: none;
 }
 
 .modal-body p {
@@ -77,32 +71,9 @@ ul.aboutMeButtons li .imageContainer img {
 	width: 100px;
 }
 
-@media all and (min-width: 960px) {
-	ul.aboutMeButtons li .imageContainer {
-		height: 86px;
-		width: 86px;
-	}
-
-	ul.aboutMeButtons li img {
-		max-width: 80px;
-		max-height: 80px;
-	}
-}
-
-@media all and (max-width: 960px) and (min-width: 768px){
-	ul.aboutMeButtons li .imageContainer {
-		height: 70px;
-		width: 70px;
-	}
-
-	ul.aboutMeButtons li img {
-		max-width: 64px;
-		max-height: 64px;
-	}
-}
-
 @media all and (max-width: 768px) {
 	ul.aboutMeButtons li {
+		margin-bottom: 10px;
 		width: 32%;
 	}
 
@@ -112,42 +83,8 @@ ul.aboutMeButtons li .imageContainer img {
 	}
 }
 
-@media all and (max-width: 768px) and (min-width: 480px){
-	ul.aboutMeButtons li .imageContainer {
-		height: 126px;
-		width: 126px;
-	}
-
-	ul.aboutMeButtons li img {
-		max-width: 120px;
-		max-height: 120px;
-	}
-}
-
-@media all and (max-width: 480px) and (min-width: 320px){
-	ul.aboutMeButtons li .imageContainer {
-		height: 86px;
-		width: 86px;
-	}
-
-	ul.aboutMeButtons li img {
-		max-width: 80px;
-		max-height: 80px;
-	}
-}
-
-@media all and (max-width: 320px) {
+@media all and (max-width: 480px) {
 	ul.aboutMeButtons li {
-		width: 48%;
-	}
-
-	ul.aboutMeButtons li .imageContainer {
-		height: 86px;
-		width: 86px;
-	}
-
-	ul.aboutMeButtons li img {
-		max-width: 80px;
-		max-height: 80px;
+		width: 96%;
 	}
 }
