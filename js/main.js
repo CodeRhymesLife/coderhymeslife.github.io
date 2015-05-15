@@ -50,22 +50,50 @@ var aboutMeData = [
     {
         title: "Home",
         image: "home.jpg",
-        description: "Home description"
+        description: {
+            contentRows: [
+                {
+                    image: "comingSoon.jpg",
+                    text: "More coming soon...",
+                },
+            ],
+        },
     },
     {
         title: "Code",
         image: "code.png",
-        description: "Code description"
+        description: {
+            contentRows: [
+                {
+                    image: "comingSoon.jpg",
+                    text: "More coming soon...",
+                },
+            ],
+        },
     },
     {
         title: "Sports",
         image: "soccerBall.png",
-        description: "Sports description"
+        description: {
+            contentRows: [
+                {
+                    image: "comingSoon.jpg",
+                    text: "More coming soon...",
+                },
+            ],
+        },
     },
     {
         title: "Gaming",
         image: "nintendo-controller.jpg",
-        description: "Gaming description"
+        description: {
+            contentRows: [
+                {
+                    image: "comingSoon.jpg",
+                    text: "More coming soon...",
+                },
+            ],
+        },
     },
 ];
 
