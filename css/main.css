@@ -72,6 +72,14 @@ ul.aboutMeButtons li .imageContainer img {
 	display: none;
 }
 
+.modal-body p {
+	font-size: 16px;
+}
+
+.modal-body img {
+	width: 100px;
+}
+
 @media all and (min-width: 960px) {
 	ul.aboutMeButtons li .imageContainer {
 		height: 86px;
