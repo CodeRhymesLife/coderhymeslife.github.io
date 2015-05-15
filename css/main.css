@@ -25,11 +25,8 @@ h1 {
 	padding: 20px 0;
 }
 
-.rowOfContent img{
-	float: left;
-}
-
 .rowOfContent img {
+	float: left;
 	margin-right: 5%;
 }
 
@@ -107,6 +104,11 @@ ul.aboutMeButtons li .imageContainer img {
 @media all and (max-width: 768px) {
 	ul.aboutMeButtons li {
 		width: 32%;
+	}
+
+	.rowOfContent img {
+		margin: 0 auto;
+		float: none;
 	}
 }
 
