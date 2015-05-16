@@ -11,8 +11,8 @@
 		<script src="js/main.js"></script>
 	</head>
 	<body>
-		<div class="contentContainer">
-			<div class="rowOfContent">
+		<div class="rootContentContainer">
+			<div class="rowOfContent indentedContentContainer">
 				<img class="avatarProfile" src="images/avatar-profile.png" />
 				<h1>Hi,</h1>
 				<p>
@@ -20,27 +20,23 @@
 				</p>
 				<div class="clear"></div>
 			</div>
+		</div>
 
-			<hr />
+		<div class="aboutMeButtonsContainer rowOfContent">
+			<div class="rootContentContainer">
+				<ul class="aboutMeButtons"></ul>
+			</div>
+		</div>
 
-			<div class="rowOfContent">
-				<ul class="aboutMeButtons">
-				</ul>
-
-				<div class="aboutMeDescriptions">
-				</div>
-
-				<!-- Modal -->
-				<div id="aboutMeDescriptionmodal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-					<div class="modal-dialog modal-lg">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-								<h4 class="modal-title" id="myModalLabel"></h4>
-							</div>
-							<div class="modal-body">
-							</div>
-						</div>
+		<!-- Modal -->
+		<div id="aboutMeDescriptionmodal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel"></h4>
+					</div>
+					<div class="modal-body">
 					</div>
 				</div>
 			</div>

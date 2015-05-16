@@ -2,6 +2,12 @@ html, body {
 	margin: 0;
 	padding: 0;
 	font-family: "Segoe UI";
+	color: white;
+	background-color: black;
+}
+
+hr {
+	border-color: rgba(255, 255, 255, 0.24);
 }
 
 p {
@@ -12,9 +18,13 @@ h1 {
 	font-size: 38px;
 }
 
-.contentContainer {
+.rootContentContainer {
 	margin: 0 auto;
 	max-width: 1366px;
+}
+
+.indentedContentContainer {
+	margin: 0 5%;
 }
 
 .avatarProfile {
@@ -28,10 +38,15 @@ h1 {
 .rowOfContent img {
 	float: left;
 	margin-right: 5%;
+	padding: 3px;
 }
 
 .clear {
     clear: both;
+}
+
+.aboutMeButtonsContainer {
+	background-color: white;
 }
 
 ul.aboutMeButtons {
@@ -44,7 +59,7 @@ ul.aboutMeButtons {
 ul.aboutMeButtons li {
 	display: inline-block;
 	list-style-type: none;
-	width: 16%;
+	width: 16.66666%;
 }
 
 ul.aboutMeButtons li .textContainer {
@@ -52,15 +67,25 @@ ul.aboutMeButtons li .textContainer {
 	padding: 10px;
 	width: 90%;
 	text-align: center;
+	color: black;
 
 	border: 1px solid black;
-	-webkit-border-radius: 12px; 
-	-moz-border-radius: 12px; 
-	border-radius: 12px;
 }
 
 ul.aboutMeButtons li .textContainer:hover {
 	cursor: pointer;
+	color: white;
+	border-color: white;
+	background-color: black;
+}
+
+.modal-content {
+	font-family: "Segoe UI";
+	color: black;
+
+	-webkit-border-radius: 0; 
+	-moz-border-radius: 0; 
+	border-radius: 0;
 }
 
 .modal-body p {
@@ -74,7 +99,11 @@ ul.aboutMeButtons li .textContainer:hover {
 @media all and (max-width: 768px) {
 	ul.aboutMeButtons li {
 		margin-bottom: 10px;
-		width: 32%;
+		width: 33.333%;
+	}
+
+	.rowOfContent {
+		padding-bottom: 10px;
 	}
 
 	.rowOfContent img {
