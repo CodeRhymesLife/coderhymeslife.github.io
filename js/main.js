@@ -68,7 +68,7 @@ var aboutMeData = [
         },
     },
     {
-        title: "Sports",
+        title: "Fun",
         description: {
             contentRows: [
                 {
@@ -79,17 +79,77 @@ var aboutMeData = [
         },
     },
     {
-        title: "Gaming",
+        title: "Resume",
+        class: "resume",
         description: {
             contentRows: [
                 {
-                    image: "comingSoon.jpg",
-                    text: "More coming soon...",
+                    text: createResume([
+                        {
+                            title: "Education",
+                            items: [
+                                {
+                                    title: "PhD Biomedical and Health Informatics",
+                                    time: {
+                                        start: "9-24-2014"
+                                    },
+                                    description: "University of Washington | Seattle, WA",
+                                },
+                                {
+                                    title: "B.S.E. Computer Science Engineering, Minor in Mathematics",
+                                    time: {
+                                        start: "9-1-2006",
+                                        end: "5-1-2010",
+                                    },
+                                    description: "University of Michigan | Ann Arbor, MI",
+                                },
+                            ],
+                        },
+                    ]),
                 },
             ],
         },
     },
 ];
+
+function createResume(sections) {
+    var monthNames = ["January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+    ];
+
+    var resume = "<ul class='sections'>";
+    sections.forEach(function (section) {
+        resume += "<li class='section'>" +
+                    "<header class='title'>" + section.title + "</header>" +
+                    "<ul class='sectionItems'>";
+
+        section.items.forEach(function (sectionItem) {
+            // Add the start and end time next to the title
+            var startTime = new Date(sectionItem.time.start);
+            var timeText = monthNames[startTime.getMonth()] + " " + startTime.getFullYear() + " - ";
+            if(sectionItem.time.end) {
+                var endTime = new Date(sectionItem.time.end);
+                timeText += monthNames[endTime.getMonth()] + " " + endTime.getFullYear();
+            }
+            else
+                timeText += "Present";
+
+            resume += "<li class='sectionItem'>" +
+                        "<header class='title'>" +
+                            sectionItem.title + " - " +
+                            "<span class='year'>" + timeText + "</span>" +
+                        "</header>" +
+                        "<header class='description'>" + sectionItem.description + "</header>" +
+                    "</li>";
+        });
+
+        resume +=   "</ul>" +
+                "</li>";
+    });
+
+    resume += "</ul>";
+    return resume;
+}
 
 $(window).load(function () {
 
@@ -118,14 +178,17 @@ $(window).load(function () {
 
         var contentHtml = "";
         aboutMeData.description.contentRows.forEach(function (contentRow) {
+            var img = contentRow.image ? "<img src='images/" + contentRow.image + "' />" : "";
             contentHtml +=
                 "<div class='rowOfContent'>" +
-                    "<img src='images/" + contentRow.image + "' />" +
+                    img +
                     "<p>" + contentRow.text + "</p>" +
                     "<div class='clear'></div>" +
                 "</div>";
         });
 
-        modal.find('.modal-body').html(contentHtml);
+        modal.find('.modal-body')
+            .addClass(aboutMeData.class || "")
+            .html(contentHtml);
     });
 });
