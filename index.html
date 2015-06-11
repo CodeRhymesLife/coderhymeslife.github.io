@@ -94,6 +94,19 @@
 		</li>
 	</script>
 
+	<script id="technicalSkillsSectionResumeTemplate" type="text/x-handlebars-template">
+		<li class='section'>
+			<header class='title'>{{title}}</header>
+			<ul class="sectionItems">
+				{{#items}}
+				<li class="sectionItem">
+					<span class='title'>{{title}}:</span>
+					<span class='description'>{{printArray items}}</span>
+				</li>
+				{{/items}}
+			</ul>
+		</li>
+	</script>
 	<script id="detailedDescriptionSectionResumeTemplate" type="text/x-handlebars-template">
 		<li class='section'>
 			<header class='title'>{{title}}</header>
