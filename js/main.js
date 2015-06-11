@@ -1,8 +1,8 @@
-var aboutMeData = [
-    {
-        title: "Education",
-        description: {
-            contentRows: [
+$(window).load(function () {
+    var aboutMeData = [
+        {
+            title: "Education",
+            content: [
                 {
                     image: "education/uwbhi.png",
                     text: "I'm currently a PhD student studying <a href='http://bhi.washington.edu'>Biomedical and Health Informatics</a> @ the University of Washington. Go Huskies!",
@@ -21,11 +21,9 @@ var aboutMeData = [
                 },
             ],
         },
-    },
-    {
-        title: "Research",
-        description: {
-            contentRows: [
+        {
+            title: "Research",
+            content: [
                 {
                     image: "research/virtualReality.jpg",
                     text: "How can we improve virtual reality simulations of biological processes? How can they be used to improve health? " +
@@ -44,151 +42,100 @@ var aboutMeData = [
                 },
             ],
         },
-    },
-    {
-        title: "Home",
-        description: {
-            contentRows: [
+        {
+            title: "Home",
+            content: [
                 {
                     image: "comingSoon.jpg",
                     text: "More coming soon...",
                 },
             ],
         },
-    },
-    {
-        title: "Code",
-        description: {
-            contentRows: [
+        {
+            title: "Code",
+            content: [
                 {
                     image: "comingSoon.jpg",
                     text: "More coming soon...",
                 },
             ],
         },
-    },
-    {
-        title: "Fun",
-        description: {
-            contentRows: [
+        {
+            title: "Fun",
+            content: [
                 {
                     image: "comingSoon.jpg",
                     text: "More coming soon...",
                 },
             ],
         },
-    },
-    {
-        title: "Resume",
-        class: "resume",
-        description: {
-            contentRows: [
+        {
+            title: "Resume",
+            class: "resume",
+            content: [
                 {
-                    text: createResume([
-                        {
-                            title: "Education",
-                            items: [
-                                {
-                                    title: "PhD Biomedical and Health Informatics",
-                                    time: {
-                                        start: "9-24-2014"
+                    text: createResumeBody([
+                            {
+                                title: "Education",
+                                items: [
+                                    {
+                                        title: "PhD Biomedical and Health Informatics",
+                                        time: {
+                                            start: "September 2014",
+                                            end: "Present",
+                                        },
+                                        description: "University of Washington | Seattle, WA",
                                     },
-                                    description: "University of Washington | Seattle, WA",
-                                },
-                                {
-                                    title: "B.S.E. Computer Science Engineering, Minor in Mathematics",
-                                    time: {
-                                        start: "9-1-2006",
-                                        end: "5-1-2010",
+                                    {
+                                        title: "B.S.E. Computer Science Engineering, Minor in Mathematics",
+                                        time: {
+                                            start: "September 2006",
+                                            end: "May 2010",
+                                        },
+                                        description: "University of Michigan | Ann Arbor, MI",
                                     },
-                                    description: "University of Michigan | Ann Arbor, MI",
-                                },
-                            ],
-                        },
+                                ],
+                            },
                     ]),
                 },
             ],
         },
-    },
-];
-
-function createResume(sections) {
-    var monthNames = ["January", "February", "March", "April", "May", "June",
-        "July", "August", "September", "October", "November", "December"
     ];
 
-    var resume = "<ul class='sections'>";
-    sections.forEach(function (section) {
-        resume += "<li class='section'>" +
-                    "<header class='title'>" + section.title + "</header>" +
-                    "<ul class='sectionItems'>";
+    var buttonData = { buttons: aboutMeData };
+    var aboutMeButtonsSource = $("#aboutMeButtons").html();
+    var template = Handlebars.compile(aboutMeButtonsSource);
+    $(".aboutMeButtons").html(template(buttonData));
 
-        section.items.forEach(function (sectionItem) {
-            // Add the start and end time next to the title
-            var startTime = new Date(sectionItem.time.start);
-            var timeText = monthNames[startTime.getMonth()] + " " + startTime.getFullYear() + " - ";
-            if(sectionItem.time.end) {
-                var endTime = new Date(sectionItem.time.end);
-                timeText += monthNames[endTime.getMonth()] + " " + endTime.getFullYear();
+    $(".aboutMeButton").click(function () {
+        for (var i = 0; i < aboutMeData.length; i++) {
+            if (aboutMeData[i].title == $(this).text().trim()) {
+                $('#aboutMeDescriptionmodal').data("aboutMeData", aboutMeData[i])
+                $('#aboutMeDescriptionmodal').modal('show');
             }
-            else
-                timeText += "Present";
-
-            resume += "<li class='sectionItem'>" +
-                        "<header class='title'>" +
-                            sectionItem.title + " - " +
-                            "<span class='year'>" + timeText + "</span>" +
-                        "</header>" +
-                        "<header class='description'>" + sectionItem.description + "</header>" +
-                    "</li>";
-        });
-
-        resume +=   "</ul>" +
-                "</li>";
+        }
     });
 
-    resume += "</ul>";
-    return resume;
-}
-
-$(window).load(function () {
-
-    aboutMeData.forEach(function (aboutMeDataPoint) {
-        var aboutMeButton = $(
-            "<li>" +
-                "<div class='textContainer'>" +
-                    aboutMeDataPoint.title +
-                "</div>" +
-            "</li>");
-        $(".aboutMeButtons").append(aboutMeButton);
-
-        aboutMeButton.click(function () {
-            $('#aboutMeDescriptionmodal').data("aboutMeData", aboutMeDataPoint)
-            $('#aboutMeDescriptionmodal').modal('show');
-        });
-    });
-
-    // When the model is shown show the about me data
     $('#aboutMeDescriptionmodal').on('show.bs.modal', function (event) {
         var modal = $(this)
+
         var aboutMeData = modal.data("aboutMeData");
 
         // Add the title and description
         modal.find('.modal-title').text(aboutMeData.title);
 
-        var contentHtml = "";
-        aboutMeData.description.contentRows.forEach(function (contentRow) {
-            var img = contentRow.image ? "<img src='images/" + contentRow.image + "' />" : "";
-            contentHtml +=
-                "<div class='rowOfContent'>" +
-                    img +
-                    "<p>" + contentRow.text + "</p>" +
-                    "<div class='clear'></div>" +
-                "</div>";
-        });
+        var aboutMeDescriptionSource = $("#aboutMeDescription").html();
+        var template = Handlebars.compile(aboutMeDescriptionSource);
 
         modal.find('.modal-body')
             .addClass(aboutMeData.class || "")
-            .html(contentHtml);
+            .html(template(aboutMeData));
     });
 });
+
+function createResumeBody(sections) {
+    var resumeData = { sections: sections };
+    var resumeSource = $("#resumeTemplate").html();
+    var template = Handlebars.compile(resumeSource);
+    return template(resumeData)
+}
