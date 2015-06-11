@@ -62,7 +62,8 @@ ul.aboutMeButtons li {
 	width: 16%;
 }
 
-ul.aboutMeButtons li .textContainer {
+ul.aboutMeButtons li a {
+	display: block;
 	margin: 0 auto;
 	padding: 10px;
 	width: 90%;
@@ -72,11 +73,12 @@ ul.aboutMeButtons li .textContainer {
 	border: 1px solid black;
 }
 
-ul.aboutMeButtons li .textContainer:hover {
+ul.aboutMeButtons li a:hover {
 	cursor: pointer;
 	color: white;
 	border-color: white;
 	background-color: black;
+	text-decoration: none;
 }
 
 .modal-content {

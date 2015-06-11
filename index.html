@@ -36,7 +36,7 @@
 			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
 					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<a href="#" class="close"><span aria-hidden="true">&times;</span></a>
 						<h4 class="modal-title" id="myModalLabel"></h4>
 					</div>
 					<div class="modal-body">
@@ -50,7 +50,7 @@
 	<script id="aboutMeButtons" type="text/x-handlebars-template">
 		{{#buttons}}
 		<li class="aboutMeButton">
-			<div class='textContainer'>{{title}}</div>
+			<a href="#{{title}}">{{title}}</a>
 		</li>
 		{{/buttons}}
 	</script>

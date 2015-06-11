@@ -30,15 +30,6 @@ $(window).load(function () {
     var template = Handlebars.compile(aboutMeButtonsSource);
     $(".aboutMeButtons").html(template(buttonData));
 
-    $(".aboutMeButton").click(function () {
-        for (var i = 0; i < data.length; i++) {
-            if (data[i].title == $(this).text().trim()) {
-                $('#aboutMeDescriptionmodal').data("aboutMeData", data[i])
-                $('#aboutMeDescriptionmodal').modal('show');
-            }
-        }
-    });
-
     $('#aboutMeDescriptionmodal').on('show.bs.modal', function (event) {
         var modal = $(this)
 
@@ -59,4 +50,25 @@ $(window).load(function () {
             .addClass(aboutMeData.class || "")
             .html(template(aboutMeData));
     });
+
+    // Use the hash to navigate between functions
+    var navigate = function () {
+        // Get the content after the hash
+        var hash = location.hash.replace("#", "");
+
+        // Hide the model if it's open
+        $('#aboutMeDescriptionmodal').modal('hide');
+
+        for (var i = 0; i < data.length; i++) {
+            if (data[i].title == hash) {
+                $('#aboutMeDescriptionmodal').data("aboutMeData", data[i])
+                $('#aboutMeDescriptionmodal').modal('show');
+                return;
+            }
+        }
+    }
+    $(window).bind('hashchange', navigate);
+
+    // Navigate to the proper part of the page based on the hash
+    navigate();
 });
