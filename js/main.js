@@ -1,3 +1,14 @@
+Handlebars.registerHelper('renderResumeSection', function () {
+    // Default template
+    var templateName = "detailedDescriptionSectionResumeTemplate";
+    if (this.title == "Education")
+        templateName = "educationSectionResumeTemplate";
+
+    var source = $("#" + templateName).html();
+    var template = Handlebars.compile(source);
+    return template(this);
+});
+
 $(window).load(function () {
     var aboutMeData = [
         {
@@ -74,29 +85,87 @@ $(window).load(function () {
             class: "resume",
             content: [
                 {
-                    text: createResumeBody([
+                    sections: [
                             {
                                 title: "Education",
                                 items: [
                                     {
                                         title: "PhD Biomedical and Health Informatics",
-                                        time: {
+                                        when: {
                                             start: "September 2014",
                                             end: "Present",
                                         },
-                                        description: "University of Washington | Seattle, WA",
+                                        where: {
+                                            institution: "University of Washington",
+                                            location: "Seattle, WA",
+                                        },
                                     },
                                     {
                                         title: "B.S.E. Computer Science Engineering, Minor in Mathematics",
-                                        time: {
+                                        when: {
                                             start: "September 2006",
                                             end: "May 2010",
                                         },
-                                        description: "University of Michigan | Ann Arbor, MI",
+                                        where: {
+                                            institution: "University of Michigan",
+                                            location: "Ann Arbor, MI",
+                                        },
                                     },
                                 ],
                             },
-                    ]),
+                            {
+                                title: "Community Service",
+                                items: [
+                                    {
+                                        when: {
+                                            start: "January 2011",
+                                            end: "May 2014",
+                                        },
+                                        where: {
+                                            institution: "Technology Access Foundation",
+                                            location: "Redmond, WA",
+                                        },
+                                        link: "http://techaccess.org/academy/",
+                                        description: {
+                                            header: "Teacher Science Partnership (TSP) Volunteer Teacher",
+                                            details: [
+                                                "Taught 10th and 11th grade computer science courses",
+                                                "Developed curriculum for 9th-12th grade computer science courses",
+                                                "Trained new TSP members as efforts grew",
+                                            ],
+                                        },
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Professional Experience",
+                                items: [
+                                    {
+                                        when: {
+                                            start: "December 2012",
+                                            end: "August 2014",
+                                        },
+                                        where: {
+                                            institution: "Microsoft: OneNote",
+                                            location: "Redmond, WA",
+                                        },
+                                        link: "http://www.onenote.com",
+                                        description: {
+                                            header: "Software Development Engineer",
+                                            details: [
+                                                "Received the highest rating for a software developer at my level",
+                                                "Developed server side and client side features to complete end to end scenarios",
+                                                "Developed in depth unit tests to ensure the features I implemented maintained stability",
+                                                "Worked with several partner teams to develop and test large cross team features",
+                                                "Participated in code reviews for core features spanning multiple teams to improve code quality",
+                                                "Refactored legacy code to facilitate use by multiple teams",
+                                                "Consistently met short term and long term goals to stay on schedule",
+                                            ],
+                                        },
+                                    }
+                                ]
+                            }
+                    ],
                 },
             ],
         },
@@ -124,18 +193,16 @@ $(window).load(function () {
         // Add the title and description
         modal.find('.modal-title').text(aboutMeData.title);
 
-        var aboutMeDescriptionSource = $("#aboutMeDescription").html();
-        var template = Handlebars.compile(aboutMeDescriptionSource);
+        // Choose the appropriate template based on what we're rendering
+        var templateName = "rowsOfContentTemplate";
+        if (aboutMeData.title == "Resume")
+            templateName = "resumeTemplate";
+
+        var source = $("#" + templateName).html();
+        var template = Handlebars.compile(source);
 
         modal.find('.modal-body')
             .addClass(aboutMeData.class || "")
             .html(template(aboutMeData));
     });
 });
-
-function createResumeBody(sections) {
-    var resumeData = { sections: sections };
-    var resumeSource = $("#resumeTemplate").html();
-    var template = Handlebars.compile(resumeSource);
-    return template(resumeData)
-}

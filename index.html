@@ -54,12 +54,10 @@
 		{{/buttons}}
 	</script>
 
-	<script id="aboutMeDescription" type="text/x-handlebars-template">
+	<script id="rowsOfContentTemplate" type="text/x-handlebars-template">
 		{{#content}}
 		<div class='rowOfContent'>
-			{{#if image}}
-				<image src="images/{{image}}" />
-			{{/if}}
+			<image src="images/{{image}}" />
 
 			<p>{{{text}}}</p>
 			<div class='clear'></div>
@@ -68,19 +66,57 @@
 	</script>
 
 	<script id="resumeTemplate" type="text/x-handlebars-template">
-		<ul class='sections'>
-			{{#sections}}
-				<li class='section'>
-					<ul class="sectionItems">
-						{{#items}}
-							<li class="sectionItem">
-								<header class='title'>{{title}} - <span class='time'>{{time.start}} - {{time.end}}</span></header>
-								<header class='description'>{{description}}</header>
-							</li>
-						{{/items}}
-					</ul>
+		{{#content}}
+		<div class='rowOfContent'>
+			<p>
+				<ul class='sections'>
+					{{#sections}}
+						{{{renderResumeSection}}}
+					{{/sections}}
+				</ul>
+			</p>
+			<div class='clear'></div>
+		</div>
+		{{/content}}
+	</script>
+
+	<script id="educationSectionResumeTemplate" type="text/x-handlebars-template">
+		<li class='section'>
+			<header class='title'>{{title}}</header>
+			<ul class="sectionItems">
+				{{#items}}
+				<li class="sectionItem">
+					<header class='title'>{{title}} - <span class='when'>{{when.start}} - {{when.end}}</span></header>
+					<header class='description'>{{where.institution}} | {{where.location}}</header>
 				</li>
-			{{/sections}}
-		</ul>
+				{{/items}}
+			</ul>
+		</li>
+	</script>
+
+	<script id="detailedDescriptionSectionResumeTemplate" type="text/x-handlebars-template">
+		<li class='section'>
+			<header class='title'>{{title}}</header>
+			<ul class="sectionItems">
+				{{#items}}
+				<li class="sectionItem">
+					<header class='title'>
+						{{where.institution}} | {{where.location}}
+						{{#if link}}
+								(<a href="{{link}}" target="_blank">link</a>)
+						{{/if}}
+					</header>
+					<div class="description">
+						<header class='description'>{{description.header}} &nbsp;&nbsp;<span class='when'><span class="start">{{when.start}}</span> - {{when.end}}</span></header>
+						<ul class="details">
+							{{#each description.details}}
+								<li>{{this}}</li>
+							{{/each}}
+						</ul>
+					</div>
+				</li>
+				{{/items}}
+			</ul>
+		</li>
 	</script>
 </html>
