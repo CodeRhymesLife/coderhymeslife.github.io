@@ -9,28 +9,13 @@
 		<script src="js/jquery-2.1.1.min.js"></script>
 		<script src="js/handlebars-v3.0.3.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/d3.v3.min.js"></script>
 
 		<script src="js/aboutMeData.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/graph.js"></script>
 	</head>
 	<body>
-		<div class="rootContentContainer">
-			<div class="rowOfContent indentedContentContainer">
-				<img class="avatarProfile" src="images/avatar-profile.png" />
-				<h1>Hi,</h1>
-				<p>
-					I'm Ryan James. Click on a button below to learn more about me.
-				</p>
-				<div class="clear"></div>
-			</div>
-		</div>
-
-		<div class="aboutMeButtonsContainer rowOfContent">
-			<div class="rootContentContainer">
-				<ul class="aboutMeButtons"></ul>
-			</div>
-		</div>
-
 		<!-- Modal -->
 		<div id="aboutMeDescriptionmodal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-lg">
@@ -44,17 +29,10 @@
 				</div>
 			</div>
 		</div>
+		<div id="aboutMeSvg"></div>
 	</body>
 
 	<!-- Handlebars templates -->
-	<script id="aboutMeButtons" type="text/x-handlebars-template">
-		{{#buttons}}
-		<li class="aboutMeButton">
-			<a href="#{{title}}">{{title}}</a>
-		</li>
-		{{/buttons}}
-	</script>
-
 	<script id="rowsOfContentTemplate" type="text/x-handlebars-template">
 		{{#content}}
 		<div class='rowOfContent'>

@@ -16,7 +16,7 @@ Handlebars.registerHelper('printArray', function (arr, options) {
 });
 
 $(window).load(function () {
-    var data = [
+	var data = [
         aboutMeData.resume,
         aboutMeData.education,
         aboutMeData.research,
@@ -25,11 +25,42 @@ $(window).load(function () {
         aboutMeData.fun,
     ];
 
-    var buttonData = { buttons: data };
-    var aboutMeButtonsSource = $("#aboutMeButtons").html();
-    var template = Handlebars.compile(aboutMeButtonsSource);
-    $(".aboutMeButtons").html(template(buttonData));
-
+	var graph = new Graph();
+	
+	var centerNode = {
+		id: "center",
+		r: 100,
+		img: {
+			src: "images/avatar-profile.png",
+			sideLength: 130,
+		},
+		click: function() {
+			centerNode.x = Math.random();
+			centerNode.y = Math.random();
+		},
+	}
+	graph.addNode(centerNode);
+	
+	data.forEach(function (item) {
+		var aboutMeNode = {
+			id: item.title,
+			title: item.title,
+			className: "aboutMeNode",
+			r: 60,
+			click: function() {
+				window.location.href = "#" + item.title;
+			},
+		};
+		graph.addNode(aboutMeNode);
+		
+		// Link the new node to the center node
+		graph.addLink({
+			source: centerNode,
+			target: aboutMeNode,
+		});
+	});
+	graph.update();
+	
     $('#aboutMeDescriptionmodal').on('show.bs.modal', function (event) {
         var modal = $(this)
 
@@ -54,18 +85,15 @@ $(window).load(function () {
     // Use the hash to navigate between functions
     var navigate = function () {
         // Get the content after the hash
-        var hash = location.hash.replace("#", "");
+        var hash = location.hash.replace("#", "").toLowerCase();
 
-        // Hide the model if it's open
+        // Hide the modal if it's open
         $('#aboutMeDescriptionmodal').modal('hide');
 
-        for (var i = 0; i < data.length; i++) {
-            if (data[i].title == hash) {
-                $('#aboutMeDescriptionmodal').data("aboutMeData", data[i])
-                $('#aboutMeDescriptionmodal').modal('show');
-                return;
-            }
-        }
+		if(aboutMeData[hash]) {
+			$('#aboutMeDescriptionmodal').data("aboutMeData", aboutMeData[hash])
+            $('#aboutMeDescriptionmodal').modal('show');
+		}
     }
     $(window).bind('hashchange', navigate);
 

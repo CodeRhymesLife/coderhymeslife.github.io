@@ -2,33 +2,31 @@ html, body {
 	margin: 0;
 	padding: 0;
 	font-family: "Segoe UI";
-	color: white;
-	background-color: black;
 }
 
-hr {
-	border-color: rgba(255, 255, 255, 0.24);
+.node {
+	cursor: pointer;
+}
+
+.node circle {
+	stroke: black;
+	fill: white;
+}
+
+.node circle.highlighted {
+	stroke: blue;
+}
+
+.node .text {
+	font-size: 24px;
+}
+
+.link {
+	stroke: black;
 }
 
 p {
 	font-size: 24px;
-}
-
-h1 {
-	font-size: 38px;
-}
-
-.rootContentContainer {
-	margin: 0 auto;
-	max-width: 1366px;
-}
-
-.indentedContentContainer {
-	margin: 0 5%;
-}
-
-.avatarProfile {
-	width: 200px;
 }
 
 .rowOfContent {
