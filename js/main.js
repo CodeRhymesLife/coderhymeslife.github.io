@@ -29,14 +29,18 @@ $(window).load(function () {
 	
 	var centerNode = {
 		id: "center",
-		r: 100,
+		className: "center",
+		r: function () {
+			return getCircleRadius(this.id);
+		},
+		charge: function () {
+			return getCharge(this.id);
+		},
 		img: {
 			src: "images/avatar-profile.png",
-			sideLength: 130,
 		},
 		click: function() {
-			centerNode.x = Math.random();
-			centerNode.y = Math.random();
+				window.location.reload();
 		},
 	}
 	graph.addNode(centerNode);
@@ -46,7 +50,12 @@ $(window).load(function () {
 			id: item.title,
 			title: item.title,
 			className: "aboutMeNode",
-			r: 60,
+			r: function () {
+				return getCircleRadius(this.id);
+			},
+			charge: function () {
+				return getCharge(this.id);
+			},	
 			click: function() {
 				window.location.href = "#" + item.title;
 			},
@@ -100,3 +109,11 @@ $(window).load(function () {
     // Navigate to the proper part of the page based on the hash
     navigate();
 });
+
+function getCircleRadius(id) {
+	return $("#" + id).css("r").replace("px", "");
+}
+
+function getCharge(id) {
+	return getCircleRadius(id) * -100;
+}

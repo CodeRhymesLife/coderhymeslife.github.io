@@ -50,8 +50,7 @@ function Graph() {
 			.style("fill", function (d) { return d.color; })
 			.on("click", function (d) { d.click(d); })
 			.append("svg:circle")
-				.attr("r",  function (d) { return d.r; })
-				.attr("id",  function (d) { return "Node;" + d.id; });
+				.attr("id",  function (d) { return d.id; });
 
 		nodeRoot.each(function (d) {
 			var rootElement = d3.select(this);
@@ -59,11 +58,7 @@ function Graph() {
 			// If this node has an image add it
 			if(d.img) {
 				rootElement.append("svg:image")
-					.attr("xlink:href", function () { return d.img.src; })
-					.attr("x", function (d) { return "-" + d.img.sideLength / 2 + "px"; })
-					.attr("y", function (d) { return "-" + d.img.sideLength / 2 + "px"; })
-					.attr("height", function (d) { return d.img.sideLength + "px"; })
-					.attr("width", function (d) { return d.img.sideLength + "px"; });
+					.attr("xlink:href", function () { return d.img.src; });
 			}
 
 			// If this node has a title add it
@@ -83,22 +78,26 @@ function Graph() {
 	    
 	    // Restart the force layout.
 	    this.force
-	    	.charge(-10000)
-	    	.linkDistance(200)
+	    	.charge(function (d) { return d.charge(); })
+	    	.linkDistance(function (d) {
+				return d.source.r() <= 60 ?
+					30 : // Mobile
+					200 // Other
+			})
 		    .size([this.w, this.h])
 		    .start();
 	};
 	
 	this.tick = function () {
     	// Display the links
-    	path.attr("d", function(d) {
+    	path.attr("d", function(d, element) {
     	    var dx = d.target.x - d.source.x,
     	        dy = d.target.y - d.source.y,
     	        dr = 0,										// Lines have no arc
     	        theta = Math.atan2(dy, dx) + Math.PI * 2,
     	        d90 = Math.PI / 2,
-    	        dtxs = d.target.x - d.target.r * Math.cos(theta),
-    	        dtys = d.target.y - d.target.r * Math.sin(theta),
+    	        dtxs = d.target.x - d.target.r() * Math.cos(theta),
+    	        dtys = d.target.y - d.target.r() * Math.sin(theta),
     	        arrowHeadWidth = 5;
     	    return "M" + d.source.x + "," + d.source.y +
     	    		"A" + dr + "," + dr + " 0 0 1," + d.target.x + "," + d.target.y +
@@ -110,8 +109,8 @@ function Graph() {
 		 
     	// Execute the tick handler for each node
     	node.attr("transform",  function (d) {
-			d.x = Math.max(d.r, Math.min(graph.w - d.r, d.x));
-			d.y = Math.max(d.r, Math.min(graph.h - d.r, d.y));
+			d.x = Math.max(d.r(), Math.min(graph.w - d.r(), d.x));
+			d.y = Math.max(d.r(), Math.min(graph.h - d.r(), d.y));
 	
 			return "translate(" + d.x + "," + d.y + ")";
 		});

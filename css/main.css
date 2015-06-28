@@ -13,8 +13,20 @@ html, body {
 	fill: white;
 }
 
-.node circle.highlighted {
-	stroke: blue;
+.node circle {
+	r: 60px;
+}
+
+.node.center circle {
+	r: 100px;
+}
+
+/* height = width = sqrt((2*r)^2 / 2) */
+.node.center image {
+	height: 140px;
+	width: 140px;
+	x: -70px;
+	y: -70px;
 }
 
 .node .text {
@@ -161,5 +173,25 @@ ul.aboutMeButtons li a:hover {
 @media all and (max-width: 480px) {
 	ul.aboutMeButtons li {
 		width: 96%;
+	}
+	
+	.node circle {
+		r: 40px;
+	}
+
+	.node.center circle {
+		r: 60px;
+	}
+
+	/* height = width = sqrt((2*r)^2 / 2) */
+	.node.center image {
+		height: 84px;
+		width: 84px;
+		x: -42px;
+		y: -42px;
+	}
+	
+	.node .text {
+		font-size: 14px;
 	}
 }
