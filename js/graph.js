@@ -58,8 +58,18 @@ function Graph() {
 			
 			// If this node has an image add it
 			if(d.img) {
+				
+				// Computes the maximum side length for the image so that the image perfectly fits within the bounds of the circle
+				var getSideLength = function (d) {
+					return Math.sqrt(Math.pow(2*d.r(), 2) / 2);
+				};
+				
 				rootElement.append("svg:image")
-					.attr("xlink:href", function () { return d.img.src; });
+					.attr("xlink:href", function () { return d.img.src; })
+					.attr("width", function (d) { return getSideLength(d) + "px"; })
+					.attr("height", function (d) { return getSideLength(d) + "px"; })
+					.attr("x", function (d) { return "-" + getSideLength(d) / 2 + "px"; })
+					.attr("y", function (d) { return "-" + getSideLength(d) / 2 + "px"; });
 			}
 
 			// If this node has a title add it
