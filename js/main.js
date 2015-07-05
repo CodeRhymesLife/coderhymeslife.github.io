@@ -15,6 +15,7 @@ Handlebars.registerHelper('printArray', function (arr, options) {
     return arr.join(', ');
 });
 
+var graph;
 $(window).load(function () {
 	var data = [
         aboutMeData.resume,
@@ -25,16 +26,20 @@ $(window).load(function () {
         aboutMeData.fun,
     ];
 
-	var graph = new Graph();
+	graph = new Graph();
 	
 	var centerNode = {
 		id: "center",
 		className: "center",
+		radiusOptions: {
+			"small": 60,
+			"large": 100,
+		},
 		r: function () {
-			return getCircleRadius(this.id);
+			return getCircleRadius(this);
 		},
 		charge: function () {
-			return getCharge(this.id);
+			return getCharge(this);
 		},
 		img: {
 			src: "images/avatar-profile.png",
@@ -50,11 +55,15 @@ $(window).load(function () {
 			id: item.title,
 			title: item.title,
 			className: "aboutMeNode",
+			radiusOptions: {
+				"small": 40,
+				"large": 60,
+			},
 			r: function () {
-				return getCircleRadius(this.id);
+				return getCircleRadius(this);
 			},
 			charge: function () {
-				return getCharge(this.id);
+				return getCharge(this);
 			},	
 			click: function() {
 				window.location.href = "#" + item.title;
@@ -110,10 +119,12 @@ $(window).load(function () {
     navigate();
 });
 
-function getCircleRadius(id) {
-	return $("#" + id).css("r").replace("px", "");
+function getCircleRadius(node) {
+	return graph.w <= 480 ?
+			node.radiusOptions.small :
+			node.radiusOptions.large;
 }
 
-function getCharge(id) {
-	return getCircleRadius(id) * -100;
+function getCharge(node) {
+	return getCircleRadius(node) * -100;
 }

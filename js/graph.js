@@ -50,7 +50,8 @@ function Graph() {
 			.style("fill", function (d) { return d.color; })
 			.on("click", function (d) { d.click(d); })
 			.append("svg:circle")
-				.attr("id",  function (d) { return d.id; });
+				.attr("id",  function (d) { return d.id; })
+				.attr("r",  function (d) { return d.r(); });
 
 		nodeRoot.each(function (d) {
 			var rootElement = d3.select(this);
