@@ -161,7 +161,7 @@ p {
 		font-size: 0.875em;
 	}
 
-	.sectionItem > .title {
+	.sectionItem .title {
 		font-size: 1em;
 	}
 }
