@@ -38,6 +38,37 @@ aboutMeData.cv = {
                     items: [
                         {
                             when: {
+                                start: "June 2015",
+                                end: "August 2015",
+                            },
+                            where: {
+                                institution: "Math Science Upward Bound (MSUB) - University of Washington",
+                                location: "Seattle, WA",
+                            },
+                            link: "http://uwmsub.org/about-us/",
+                            description: {
+                                header: "Computer Science Teacher",
+                                bullets: [
+                                    "Co-taught 'Intro to Computer Science (Java)' to a class of 16 bright, rising 11th and 12th graders",
+                                    "Collaborated with <a href='https://www.linkedin.com/in/kaseychampion' target='_blank'>Kasey Champion</a> to successfully develop lesson plans, teach and evaluate students",
+                                    "Tailored lesson plans to students' interests, which included gaming, media, sports, music, and their prospective occupations",
+                                    "Developed several in-class projects, including <a href='https://github.com/rcjames1004/Invaders' target='_blank'>a final project</a> structured to teach and evaluate students based on class learning objectives",
+                                    "Helped excelling students develop personal and unique final projects from scratch to give them experience working on end-end development",
+                                    "Programming concepts: types, printlns, methods, if/else if/else, loops, arrays, parameters and returns",
+                                    "Development skills: GitHub, JGrasp, IntelliJ IDEA, working in teams, breaking problems down into small, achievable pieces"
+                                ],
+                                summary: [
+                                    "What an experience! I love teaching, especially when I'm collaborating with a great group of leaders, and teaching a class of extremely bright rising 11th and 12th grade students who are hungry to learn. This summer was a blast.",
+                                    "I co-taught 'Intro to Computer Science (Java)' over a period of 6 weeks with <a href='https://www.linkedin.com/in/kaseychampion' target='_blank'>Kasey Champion</a>, an excelent teacher and program manager at Microsoft. We were both too busy to teach alone, so we decided to collaborate. Looking back, that was the best decision I could have made. I learned a ton from her, including how to be myself while teaching effectively, and the value in starting each class with a warm up that uses the past to get students thinking about their future. We each lectured two days a week and collaborated on a daily basis to ensure we were starting where the other left off. It was great to have someone to lean on and learn from throughout the summer.",
+                                    "At the start of the summer we took a poll of students' interests, and used those interests to create tailored lesson plans. If each class were a quilt, then each quilt was threaded with ideas and concepts reinforced by student interests. For example, while teaching if/else if/else branching logic, I pulled up<a href='https://www.youtube.com/watch?v=swiXG0A56rw' target='_blank'> a video of League of Legends character deaths</a> to illustrate how code branching logic can be used to detect if a player is alive or dead. The students really enjoyed and learned from these types of associations because they could relate to them, which made thinking about the concepts we were teaching more real. These moment also became important metacognitive moments for myself and Kasey--they forced us to think about the way were were teaching the class. Each student had different interests and thus would learn differently from each example we used in class. To cast the widest net we carefully threaded each class with multiple real world examples to increase the chance that every student absored what we were trying to teach. It became evident that this method was effective when we evaluated student projects.",
+                                    "On a weekly, and ocassionly on a daily basis Kasey and I developed fun and thought provoking in class projects that students worked through to solidify concepts they learned in class (<a href='https://github.com/rcjames1004/MSUB-Add-Function' target='_blank'>here's one of the more simple projects</a> that we put on GitHub). Many of these projects were tailored to the students' interests, ranging from a Netflix login project to a sports stat tracker project. Each project was effective, but I am most proud of <a href='https://github.com/rcjames1004/Invaders' target='_blank'>the final project</a>--one I like to think of as a game in a game. The outer game was Space Invaders; however, I removed key elements (e.g. player movement and menu controls) of the outer game to create a fun project that students used to collaboratively solidify programming concepts and gain programming experience.",
+                                    "There were several students who chose not to work on Space Invaders. Instead, they developed their own projects from scratch. This gave Kasey and I the opportunity to teach these students how to collaboratively develop a software application from start to finish.",
+                                    "Teaching this class exemplified why it's imperative that every student's opportunities to learn and grow be maximized, despite where they come from. Every student in the MSUB program comes from a disadvantaged background, and every student in my class showed me why our future is in good hands. Motivated, bright, creative, inventive and so, so much more, these young adults clearly demonstrated that they can make the most of great opportunity.",
+                                ],
+                            },
+                        },
+                        {
+                            when: {
                                 start: "January 2011",
                                 end: "May 2014",
                             },

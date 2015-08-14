@@ -123,14 +123,18 @@
 						<div class="details">
 							<ul class="bullets">
 								{{#each description.bullets}}
-								<li>{{this}}</li>
+								<li>{{{this}}}</li>
 								{{/each}}
 							</ul>
 
 							<div class="summary">
+								{{#if description.summary}}
 								{{#each description.summary}}
-								<p>{{this}}</p>
+								<p>{{{this}}}</p>
 								{{/each}}
+								{{else}}
+								<p>DETAILED SUMMARY COMING SOON. <button onclick="$('.descriptionType .bullets').click();">CLICK HERE TO VIEW A BULLETED SUMMARY</button>.</p>
+								{{/if}}
 							</div>
 						</div>
 					</div>
