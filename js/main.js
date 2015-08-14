@@ -18,7 +18,7 @@ Handlebars.registerHelper('printArray', function (arr, options) {
 var graph;
 $(window).load(function () {
 	var data = [
-        aboutMeData.resume,
+        aboutMeData.cv,
         aboutMeData.education,
         aboutMeData.research,
         aboutMeData.home,
@@ -89,8 +89,8 @@ $(window).load(function () {
 
         // Choose the appropriate template based on what we're rendering
         var templateName = "rowsOfContentTemplate";
-        if (aboutMeData.title == "Resume")
-            templateName = "resumeTemplate";
+        if (aboutMeData.title == "CV")
+            templateName = "cvTemplate";
 
         var source = $("#" + templateName).html();
         var template = Handlebars.compile(source);

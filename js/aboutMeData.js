@@ -1,7 +1,7 @@
 var aboutMeData = {};
 
-aboutMeData.resume = {
-    title: "Resume",
+aboutMeData.cv = {
+    title: "CV",
     class: "resume",
     content: [
         {
@@ -48,10 +48,15 @@ aboutMeData.resume = {
                             link: "http://techaccess.org/academy/",
                             description: {
                                 header: "Teacher Science Partnership (TSP) Volunteer Teacher",
-                                details: [
+                                bullets: [
                                     "Taught 10th and 11th grade computer science courses",
                                     "Developed curriculum for 9th-12th grade computer science courses",
                                     "Trained new TSP members as efforts grew",
+                                ],
+                                summary: [
+                                    "At Technology Access Foundation (TAF) it was my privilege to learn and grow as a teacher while teaching computer science to 10th and 11th graders. I was given the opportunity to help develop curriculum and continually improve that curriculum after each class. This iterative learning experience illustrated how challenging teaching is. Each student learns at least a little differently than every other student in class, and developing a lesson plan that reflects each student's abilities and learning style is a challenging task. Fortunately, I was surrounded by a great group of colleagues and teachers that guided me through this process.",
+                                    "If I had to choose, I would say the most important takeaway I gained from this expreience is that a teacher is just as much a student as the members of his or her class. I learned how to prepare lessons; how to leverage students' knowledge to teach them on a more personal level; how to collaborate with other teachers to motivate, challenge and develop young minds; and much more, including how to break down a multi-year curriculum into semester, week and class length lesson plans.",
+                                    "+++ Special thanks to David Harris for leading us towards positive change +++"
                                 ],
                             },
                         },
@@ -89,7 +94,7 @@ aboutMeData.resume = {
                             link: "http://www.onenote.com",
                             description: {
                                 header: "Software Development Engineer",
-                                details: [
+                                bullets: [
                                     "Received the highest rating for a software developer at my level",
                                     "Developed server side and client side features to complete end to end scenarios",
                                     "Developed in depth unit tests to ensure the features I implemented maintained stability",
@@ -97,7 +102,7 @@ aboutMeData.resume = {
                                     "Participated in code reviews for core features spanning multiple teams to improve code quality",
                                     "Refactored legacy code to facilitate use by multiple teams",
                                     "Consistently met short term and long term goals to stay on schedule",
-                                ],
+                                ]
                             },
                         },
                         {
@@ -112,7 +117,7 @@ aboutMeData.resume = {
                             link: "http://office.microsoft.com/en-us/access",
                             description: {
                                 header: "Software Development Engineer",
-                                details: [
+                                bullets: [
                                     "Ranked in the top 40% of software developers at my level",
                                     "Developed proficiency in the Office development environment",
                                     "Provided code reviews for Access and Excel developers to learn coding patterns and techniques, and improve the quality of shipping code",
@@ -143,7 +148,7 @@ aboutMeData.resume = {
                             link: "http://sbp.bhi.washington.edu/",
                             description: {
                                 header: "Semantics of Biological Processes Student Researcher",
-                                details: [
+                                bullets: [
                                     "Searching for new ways to improve health through the application of biosimulation models",
                                     "Discovering better ways to visualize the components that make up biosimulation models in order to facilitate model composition and decomposition tasks in SemGen",
                                 ],
@@ -161,7 +166,7 @@ aboutMeData.resume = {
                             link: "http://www.seattlechildrens.org/research/childhood-cancer",
                             description: {
                                 header: "Cancer Research Volunteer",
-                                details: [
+                                bullets: [
                                     "Volunteered for Dr. Michael Jensen to assist his research team store flow cytometry data to allow for more efficient data retrieval and analysis",
                                     "Investigated ways to mathematically model biological systems to help advance research",
                                 ],
@@ -179,7 +184,7 @@ aboutMeData.resume = {
                             link: "https://github.com/rcjames1004/SemGen-Composer",
                             description: {
                                 header: "Biomedical and Health Informatics Volunteer",
-                                details: [
+                                bullets: [
                                     "Created SemGen-Composer - an open source Java application that leverages the powerful functions of SemGen to create, edit, and merge models through an intuitive drag and drop user interface",
                                     "Studied SemSim and SemGen to understand the problem domain",
                                     "Held weekly meetings with Dr. Neal to discuss topics in modular simulation, define project goals and deadlines, discuss project progress, and resolve open issues",
@@ -203,7 +208,7 @@ aboutMeData.resume = {
                             link: "http://www.physiome.org",
                             description: {
                                 header: "Biological Systems Modeling Volunteer",
-                                details: [
+                                bullets: [
                                     "Revised and developed integrated quantitative models of biological systems to produce empirical data used to understand medicine and human physiology",
                                     "Revised Diffusion1Dpde model to describe diffusion of particles in one dimension",
                                     "Revised RandomWalk2D model to describe diffusion of particles in two dimensions",
@@ -224,7 +229,7 @@ aboutMeData.resume = {
                             },
                             description: {
                                 header: "Research Assistant, Computer Science",
-                                details: [
+                                bullets: [
                                     "Assisted Professor Jeffrey Fessler in improving the FDK 3D image reconstruction method.",
                                     "Accelerated the FDK back-projection algorithm using a GPU to parallelize complex equations.",
                                     "Optimized GPU thread batching and reduced memory access latency.",
@@ -247,7 +252,7 @@ aboutMeData.resume = {
                             },
                             description: {
                                 header: "Software Development Engineering Intern",
-                                details: [
+                                bullets: [
                                     "Collected performance data for Intel's GPUs including Ivy Bridge, Sandy Bridge, and Iron Lake.",
                                     "Attended weekly performance/optimization meetings to locate bottlenecks and assign GPU driver optimization tasks.",
                                     "Optimized and added counters to GPU driver code.",
@@ -266,7 +271,7 @@ aboutMeData.resume = {
                             },
                             description: {
                                 header: "Data Architect Intern",
-                                details: [
+                                bullets: [
                                     "Assisted in developing logical and physical data models for the Warranty Service Initiative (WSI).",
                                     "Organized and prepared data models and supporting documentation for team meetings.",
                                     "Accurately updated the Oracle Designer repository with data obtained from meetings.",

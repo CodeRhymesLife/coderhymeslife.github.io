@@ -104,6 +104,26 @@ ul.aboutMeButtons li a:hover {
 	font-family: 'Trebuchet MS', Arial;
 }
 
+.resume ul.descriptionType {
+	margin: 0;
+	padding: 0;
+}
+
+.resume ul.descriptionType li {
+	display: inline-block;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+
+.resume ul.descriptionType li button {
+	padding: 10px;
+	background-color: #D8D8D8;
+}
+.resume ul.descriptionType li button.selected {
+	background-color: #0099FF;
+}
+
 .section  {
 	margin-bottom: 30px;
 }
@@ -138,6 +158,10 @@ ul.aboutMeButtons li a:hover {
 
 .sectionItem > .description .when .start {
 	font-weight: 500;
+}
+
+.sectionItem > .description .details .summary {
+	margin-left: 20px;
 }
 
 @media all and (max-width: 768px) {

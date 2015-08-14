@@ -44,7 +44,23 @@
 		{{/content}}
 	</script>
 
-	<script id="resumeTemplate" type="text/x-handlebars-template">
+	<script id="cvTemplate" type="text/x-handlebars-template">
+		<ul class="descriptionType">
+			<li>
+				<button onclick="$('.descriptionType .bullets').removeClass('selected'); $(this).addClass('selected'); $('.description .details .bullets').hide(); $('.description .details .summary').show();"
+					class="summary">
+					Detailed Summary
+				</button>
+			</li>
+
+			<li>
+				<button onclick="$('.descriptionType .summary').removeClass('selected'); $(this).addClass('selected'); $('.description .details .summary').hide(); $('.description .details .bullets').show();"
+					class="bullets">
+					Bullet Summary
+				</button>
+			</li>
+		</ul>
+
 		{{#content}}
 		<div class='rowOfContent'>
 			<p>
@@ -57,6 +73,10 @@
 			<div class='clear'></div>
 		</div>
 		{{/content}}
+		<script>
+			// Select the detailed summary view by default
+			$(".descriptionType .summary").click();
+		</script>
 	</script>
 
 	<script id="educationSectionResumeTemplate" type="text/x-handlebars-template">
@@ -100,11 +120,19 @@
 					</header>
 					<div class="description">
 						<header class='description'>{{description.header}} &nbsp;&nbsp;<span class='when'><span class="start">{{when.start}}</span> - {{when.end}}</span></header>
-						<ul class="details">
-							{{#each description.details}}
+						<div class="details">
+							<ul class="bullets">
+								{{#each description.bullets}}
 								<li>{{this}}</li>
-							{{/each}}
-						</ul>
+								{{/each}}
+							</ul>
+
+							<div class="summary">
+								{{#each description.summary}}
+								<p>{{this}}</p>
+								{{/each}}
+							</div>
+						</div>
 					</div>
 				</li>
 				{{/items}}
