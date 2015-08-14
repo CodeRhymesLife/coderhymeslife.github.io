@@ -111,12 +111,13 @@ ul.aboutMeButtons li a:hover {
 
 .resume ul.descriptionType li {
 	display: inline-block;
-	font-size: 14px;
-	margin: 0;
+	margin-bottom: 5px;
 	padding: 0;
 }
 
 .resume ul.descriptionType li button {
+	width: 140px;
+	font-size: 14px;
 	padding: 10px;
 	background-color: #D8D8D8;
 }
