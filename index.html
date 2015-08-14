@@ -64,7 +64,7 @@
 		{{#header}}
 		<div class="header">
 			<label class="name">{{name}}</label>
-			<label class="email">{{email}}</label>
+			<p class="email">{{email}}</p>
 		</div>
 		{{/header}}
 
@@ -92,7 +92,7 @@
 			<ul class="sectionItems">
 				{{#items}}
 				<li class="sectionItem">
-					<header class='title'>{{title}} - <span class='when'>{{when.start}} - {{when.end}}</span></header>
+					<header><label class="title">{{title}}</label><span class='when'> - {{when.start}} - {{when.end}}</span></header>
 					<header class='description'>{{where.institution}} | {{where.location}}</header>
 				</li>
 				{{/items}}

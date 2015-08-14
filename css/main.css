@@ -16,7 +16,7 @@ html, body {
 }
 
 .node .text {
-	font-size: 24px;
+	font-size: 1.5em;
 }
 
 .link {
@@ -24,7 +24,7 @@ html, body {
 }
 
 p {
-	font-size: 24px;
+	font-size: 1.5em;
 }
 
 .rowOfContent {
@@ -41,42 +41,6 @@ p {
     clear: both;
 }
 
-.aboutMeButtonsContainer {
-	background-color: white;
-}
-
-ul.aboutMeButtons {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	font-size: 18px;
-}
-
-ul.aboutMeButtons li {
-	display: inline-block;
-	list-style-type: none;
-	width: 16%;
-}
-
-ul.aboutMeButtons li a {
-	display: block;
-	margin: 0 auto;
-	padding: 10px;
-	width: 90%;
-	text-align: center;
-	color: black;
-
-	border: 1px solid black;
-}
-
-ul.aboutMeButtons li a:hover {
-	cursor: pointer;
-	color: white;
-	border-color: white;
-	background-color: black;
-	text-decoration: none;
-}
-
 .modal-content {
 	font-family: "Segoe UI";
 	color: black;
@@ -87,7 +51,7 @@ ul.aboutMeButtons li a:hover {
 }
 
 .modal-body p {
-	font-size: 16px;
+	font-size: 1em;
 }
 
 .modal-body img {
@@ -112,11 +76,7 @@ ul.aboutMeButtons li a:hover {
 }
 
 .resume .header .name {
-	font-size: 48px;
-}
-
-.resume .header .email {
-	font-size: 14px;
+	font-size: 3em;
 }
 
 .resume .title {
@@ -136,7 +96,7 @@ ul.aboutMeButtons li a:hover {
 
 .resume ul.descriptionType li button {
 	width: 140px;
-	font-size: 14px;
+	font-size: 0.875em;
 	padding: 10px;
 	background-color: #D8D8D8;
 }
@@ -149,7 +109,7 @@ ul.aboutMeButtons li a:hover {
 }
 
 .section > .title {
-	font-size: 28px;
+	font-size: 1.75em;
 	color: grey;
 }
 
@@ -157,19 +117,20 @@ ul.aboutMeButtons li a:hover {
 	margin-bottom: 10px;
 }
 
-.sectionItem > .title {
-	font-size: 20px;
+.sectionItem .title {
+	font-size: 1.25em;
 	font-weight: bold;
+	margin: 0;
 }
 
-.sectionItem > .title .when {
-	font-size: 16px;
+.sectionItem .title .when {
+	font-size: 1em;
 	font-style: italic;
 	font-weight: normal;
 }
 
 .sectionItem > .description {
-	font-size: 18px;
+	font-size: 1em;
 }
 
 .sectionItem > .description .when {
@@ -197,6 +158,10 @@ ul.aboutMeButtons li a:hover {
 
 @media all and (max-width: 480px) {	
 	.node .text {
-		font-size: 14px;
+		font-size: 0.875em;
+	}
+
+	.sectionItem header > .title {
+		font-size: 1em;
 	}
 }

@@ -46,7 +46,7 @@ aboutMeData.cv = {
                                 end: "August 2015",
                             },
                             where: {
-                                institution: "Math Science Upward Bound (MSUB) - University of Washington",
+                                institution: "University of Washington: Math Science Upward Bound (MSUB)",
                                 location: "Seattle, WA",
                             },
                             link: "http://uwmsub.org/about-us/",
