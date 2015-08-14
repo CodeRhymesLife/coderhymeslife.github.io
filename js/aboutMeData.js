@@ -3,6 +3,10 @@ var aboutMeData = {};
 aboutMeData.cv = {
     title: "CV",
     class: "resume",
+    header: {
+        name: "Ryan C James",
+        email: "rcjames1004@gmail.com",
+    },
     content: [
         {
             sections: [

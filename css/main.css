@@ -100,6 +100,25 @@ ul.aboutMeButtons li a:hover {
 	padding: 0;
 }
 
+.resume .header {
+	font-family: Calibri;
+	text-align: center;
+}
+
+.resume .header .name,
+.resume .header .email {
+	display: block;
+	margin: 0;
+}
+
+.resume .header .name {
+	font-size: 48px;
+}
+
+.resume .header .email {
+	font-size: 14px;
+}
+
 .resume .title {
 	font-family: 'Trebuchet MS', Arial;
 }
