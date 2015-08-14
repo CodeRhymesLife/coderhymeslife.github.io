@@ -67,7 +67,7 @@ aboutMeData.cv = {
                     items: [
                         {
                             title: "Languages",
-                            items: ["HTML", "JavaScript", "C#", "Java", "Scala", "Python", "C", "C++", "SQL"]
+                            items: ["HTML", "CSS", "JavaScript", "C#", "Java", "Scala", "Python", "C", "C++", "SQL", "Powershell"]
                         },
                         {
                             title: "Frameworks",
@@ -75,7 +75,7 @@ aboutMeData.cv = {
                         },
                         {
                             title: "Software Tools",
-                            items: ["Visal Studio", "Eclipse", "Microsoft Visio", "Git"]
+                            items: ["Visal Studio", "IntelliJ IDEA", "Eclipse", "Microsoft Visio", "Git"]
                         },
                     ],
                 },
