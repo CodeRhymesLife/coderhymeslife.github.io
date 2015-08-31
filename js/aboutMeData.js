@@ -14,7 +14,7 @@ aboutMeData.cv = {
                     title: "Education",
                     items: [
                         {
-                            title: "PhD Biomedical and Health Informatics",
+                            title: "Biomedical and Health Informatics PhD Candidate",
                             when: {
                                 start: "September 2014",
                                 end: "Present",
@@ -156,7 +156,7 @@ aboutMeData.cv = {
                                     "Ranked in the top 40% of software developers at my level",
                                     "Developed proficiency in the Office development environment",
                                     "Provided code reviews for Access and Excel developers to learn coding patterns and techniques, and improve the quality of shipping code",
-                                    "Created development design documents to describe in detail each feature’s code architecture, development cost, and test plan",
+                                    "Created development design documents to describe in detail each featureÂ’s code architecture, development cost, and test plan",
                                     "Presented development design documents to team members to inform others of my plans and solidify designs before implementation",
                                     "Implemented multiple features using C++, C#, Script#, Javascript, HTML, CSS, and SQL",
                                     "Developed unit tests for core features to validate code functionality",
