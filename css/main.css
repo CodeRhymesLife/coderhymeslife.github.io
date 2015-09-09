@@ -64,6 +64,49 @@ p {
 	padding: 0;
 }
 
+.button {
+	padding: 7px;
+
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid black;
+
+	text-align: center;
+}
+
+.button:hover:not(.selected) {
+	padding: 5px;
+	border-width: 3px;
+	cursor: pointer;
+}
+
+.resume ul.descriptionType {
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.resume ul.descriptionType li {
+	display: inline-block;
+	margin-bottom: 5px;
+	padding: 0;
+}
+
+.resume ul.descriptionType li .button {
+	width: 140px;
+	font-size: 0.875em;
+}
+.resume ul.descriptionType li .button.selected {
+	border-color: #0099FF;
+}
+
+.resume .printCV {
+	float: right;
+	width: auto;
+	height: 40px;
+}
+
 .resume .header {
 	font-family: Calibri;
 	text-align: center;
@@ -81,27 +124,6 @@ p {
 
 .resume .title {
 	font-family: 'Trebuchet MS', Arial;
-}
-
-.resume ul.descriptionType {
-	margin: 0;
-	padding: 0;
-}
-
-.resume ul.descriptionType li {
-	display: inline-block;
-	margin-bottom: 5px;
-	padding: 0;
-}
-
-.resume ul.descriptionType li button {
-	width: 140px;
-	font-size: 0.875em;
-	padding: 10px;
-	background-color: #D8D8D8;
-}
-.resume ul.descriptionType li button.selected {
-	background-color: #0099FF;
 }
 
 .section  {

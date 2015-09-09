@@ -128,3 +128,7 @@ function getCircleRadius(node) {
 function getCharge(node) {
 	return getCircleRadius(node) * -100;
 }
+
+function printElement(elementToPrint) {
+	alert("Printing " + elementToPrint);
+}

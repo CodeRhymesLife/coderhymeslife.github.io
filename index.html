@@ -47,19 +47,23 @@
 	<script id="cvTemplate" type="text/x-handlebars-template">
 		<ul class="descriptionType">
 			<li>
-				<button onclick="$('.descriptionType .bullets').removeClass('selected'); $(this).addClass('selected'); $('.description .details .bullets').hide(); $('.description .details .summary').show();"
-					class="summary">
+				<div onclick="$('.descriptionType .bullets').removeClass('selected'); $(this).addClass('selected'); $('.description .details .bullets').hide(); $('.description .details .summary').show();"
+					class="button summary">
 					Detailed Summary
-				</button>
+				</div>
 			</li>
 
 			<li>
-				<button onclick="$('.descriptionType .summary').removeClass('selected'); $(this).addClass('selected'); $('.description .details .summary').hide(); $('.description .details .bullets').show();"
-					class="bullets">
+				<div onclick="$('.descriptionType .summary').removeClass('selected'); $(this).addClass('selected'); $('.description .details .summary').hide(); $('.description .details .bullets').show();"
+					class="button bullets">
 					Bullet Summary
-				</button>
+				</div>
 			</li>
 		</ul>
+
+		<img class="button printCV" src="images/printer.svg" onclick="printElement('modal-body')"/>
+
+		<div class="clear"></div>
 
 		{{#header}}
 		<div class="header">
