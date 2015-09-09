@@ -81,6 +81,10 @@ p {
 	cursor: pointer;
 }
 
+#printSection .button {
+	display: none;
+}
+
 .resume ul.descriptionType {
 	margin: 0;
 	padding: 0;
@@ -186,4 +190,24 @@ p {
 	.sectionItem .title {
 		font-size: 1em;
 	}
+}
+
+@media screen {
+  #printSection {
+      display: none;
+  }
+}
+
+@media print {
+  body * {
+    visibility:hidden;
+  }
+  #printSection, #printSection * {
+    visibility:visible;
+  }
+  #printSection {
+    position:absolute;
+    left:0;
+    top:0;
+  }
 }
