@@ -214,4 +214,8 @@ p {
     left:0;
     top:0;
   }
+
+  .header a:after {
+  	display: none;
+  }
 }

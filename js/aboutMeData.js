@@ -6,6 +6,7 @@ aboutMeData.cv = {
     header: {
         name: "Ryan C James",
         email: "rcjames1004@gmail.com",
+        website: "http://rcjames1004.github.io"
     },
     content: [
         {
