@@ -94,11 +94,11 @@ p {
 .resume ul.descriptionType li {
 	display: inline-block;
 	margin-bottom: 5px;
-	padding: 0;
+	padding: 0 5px 0 0;
 }
 
 .resume ul.descriptionType li .button {
-	width: 140px;
+	width: 120px;
 	font-size: 0.875em;
 }
 .resume ul.descriptionType li .button.selected {
@@ -182,7 +182,11 @@ p {
 	}
 }
 
-@media all and (max-width: 480px) {	
+@media all and (max-width: 480px) {
+	.resume ul.descriptionType li {
+    	display: block;
+    }
+
 	.node .text {
 		font-size: 0.875em;
 	}
