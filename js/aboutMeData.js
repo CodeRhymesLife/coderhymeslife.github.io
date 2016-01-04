@@ -347,6 +347,15 @@ aboutMeData.research = {
     title: "Research",
     content: [
         {
+            image: "research/haloLens.jpg",
+            text: "My latest research explores ways to improve medical education using augmented reality (AR) and virtual reality (VR)." +
+				" Learning in AR and VR opens up new dimensions for input, and adds a spatial element to learning that makes things easier to remember." +
+				" It also adds a level of realism to lessons by placing students inside of the learning.<br><br>" +
+				" To see what I mean check these out:<br><br>" +
+				"<a href='VirtualHeart/Web.html'>FMA Explorer in VR (and eventual AR)</a><br><br>" +
+				"<iframe width='560' height='315' src='https://www.youtube.com/embed/CiExaT2zaKo' frameborder='0' allowfullscreen></iframe>",
+        },
+		{
             image: "research/virtualReality.jpg",
             text: "How can we improve virtual reality simulations of biological processes? How can they be used to improve health? " +
                 "What effects will simulations have on healthcare 5, 10, 50 years from now? How can we exploit gamers to improve medical outcomes? " +
