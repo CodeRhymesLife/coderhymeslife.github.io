@@ -349,11 +349,11 @@ aboutMeData.research = {
         {
             image: "research/haloLens.jpg",
             text: "My latest research explores ways to improve medical education using augmented reality (AR) and virtual reality (VR)." +
-				" Learning in AR and VR opens up new dimensions for input, and adds a spatial element to learning that makes things easier to remember." +
-				" It also adds a level of realism to lessons by placing students inside of the learning.<br><br>" +
-				" To see what I mean check these out:<br><br>" +
-				"FMA Explorer in VR (and eventual AR): (<a href='VirtualHeart/Web/Web.html' target='_blank'>Web</a>) (<a href='VirtualHeart/Windows/VirtualHeart.zip' download>Windows</a>) (<a href='VirtualHeart/Mac/VirtualHeart.zip' download>Mac</a>)<br><br>" +
-				"<iframe width='560' height='315' src='https://www.youtube.com/embed/CiExaT2zaKo' frameborder='0' allowfullscreen></iframe>",
+		"Learning in AR and VR opens up new dimensions for input, and adds a spatial element to learning that makes things easier to remember. " +
+		"It also adds a level of realism to lessons by placing students inside of the learning.<br><br>" +
+		"To see what I mean check these out:<br><br>" +
+		"FMA Explorer prototype: (<a href='VirtualHeart/Web/Web.html' target='_blank'>Web</a>) (<a href='VirtualHeart/Windows/VirtualHeart.zip' download>Windows</a>) (<a href='VirtualHeart/Mac/VirtualHeart.zip' download>Mac</a>)<br><br>" +
+		"<iframe width='560' height='315' src='https://www.youtube.com/embed/CiExaT2zaKo' frameborder='0' allowfullscreen></iframe>",
         },
 		{
             image: "research/virtualReality.jpg",
