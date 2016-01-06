@@ -15,20 +15,21 @@
 		<script type="text/javascript">
 		<!--
 			var config = {
-				width: 1080, 
+				width: 1200, 
 				height: 600,
 				params: { enableDebugging:"0" }
 				
 			};
+			config.params["disableContextMenu"] = true;
 			var u = new UnityObject2(config);
-
+			
 			jQuery(function() {
 
 				var $missingScreen = jQuery("#unityPlayer").find(".missing");
 				var $brokenScreen = jQuery("#unityPlayer").find(".broken");
 				$missingScreen.hide();
 				$brokenScreen.hide();
-				
+
 				u.observeProgress(function (progress) {
 					switch(progress.pluginStatus) {
 						case "broken":
@@ -85,7 +86,7 @@
 		}
 		div.content {
 			margin: auto;
-			width: 1080px;
+			width: 1200px;
 		}
 		div.broken,
 		div.missing {
@@ -110,7 +111,7 @@
 		div#unityPlayer {
 			cursor: default;
 			height: 600px;
-			width: 1080px;
+			width: 1200px;
 		}
 		-->
 		</style>
@@ -122,11 +123,6 @@
 				<div class="missing">
 					<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
 						<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
-					</a>
-				</div>
-				<div class="broken">
-					<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now! Restart your browser after install.">
-						<img alt="Unity Web Player. Install now! Restart your browser after install." src="http://webplayer.unity3d.com/installation/getunityrestart.png" width="193" height="63" />
 					</a>
 				</div>
 			</div>
