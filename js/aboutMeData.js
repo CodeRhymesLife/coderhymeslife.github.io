@@ -353,7 +353,8 @@ aboutMeData.research = {
 				"It also adds a level of realism to lessons by placing students inside of the learning material. Here's what I've been working on:<br><br>" +
 				"<iframe width='560' height='315' src='https://www.youtube.com/embed/7Wl3me1mkxc' frameborder='0' allowfullscreen></iframe><br>" +
 				"(<a href='VirtualOrganExplorer/Web/Web.html' target='_blank'>Try Here On Desktop</a>)<br><br>" +
-				"<iframe width='560' height='315' src='https://www.youtube.com/embed/CiExaT2zaKo' frameborder='0' allowfullscreen></iframe>",
+				"<iframe width='560' height='315' src='https://www.youtube.com/embed/CiExaT2zaKo' frameborder='0' allowfullscreen></iframe><br><br>" +
+				"<iframe width='560' height='315' src='https://www.youtube.com/embed/uf-CTVqndEs' frameborder='0' allowfullscreen></iframe>",
         },
 		{
             image: "research/virtualReality.jpg",
