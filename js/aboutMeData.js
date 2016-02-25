@@ -351,10 +351,12 @@ aboutMeData.research = {
             text: "My latest research explores ways to improve medical education using augmented reality (AR) and virtual reality (VR). " +
 				"Learning in AR and VR opens up new dimensions for input, and adds a spatial element to learning that makes things easier to remember. " +
 				"It also adds a level of realism to lessons by placing students inside of the learning material. Here's what I've been working on:<br><br>" +
+				"<iframe width='560' height='315' src='https://www.youtube.com/embed/qSBupUubrnQ' frameborder='0' allowfullscreen></iframe><br>" +
+				"(This was a promotional video for a class project)<br><br>" +
+				"<iframe width='560' height='315' src='https://www.youtube.com/embed/uf-CTVqndEs' frameborder='0' allowfullscreen></iframe><br><br>" +
 				"<iframe width='560' height='315' src='https://www.youtube.com/embed/7Wl3me1mkxc' frameborder='0' allowfullscreen></iframe><br>" +
 				"(<a href='VirtualOrganExplorer/Web/Web.html' target='_blank'>Try Here On Desktop</a>)<br><br>" +
-				"<iframe width='560' height='315' src='https://www.youtube.com/embed/CiExaT2zaKo' frameborder='0' allowfullscreen></iframe><br><br>" +
-				"<iframe width='560' height='315' src='https://www.youtube.com/embed/uf-CTVqndEs' frameborder='0' allowfullscreen></iframe>",
+				"<iframe width='560' height='315' src='https://www.youtube.com/embed/CiExaT2zaKo' frameborder='0' allowfullscreen></iframe><br><br>",
         },
 		{
             image: "research/virtualReality.jpg",
