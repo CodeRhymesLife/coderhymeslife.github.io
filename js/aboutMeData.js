@@ -174,8 +174,32 @@ aboutMeData.cv = {
                     items: [
                         {
                             when: {
-                                start: "September 2014",
+                                start: "September 2015",
                                 end: "Present",
+                            },
+                            where: {
+                                institution: "University of Washington",
+                                location: "Seattle, WA",
+                            },
+                            link: "http://drryanjames.github.io/#Research",
+                            description: {
+                                header: "Individual Researcher",
+                                bullets: [
+                                    "Exploring ways to improve medical education using augmented reality, virtual reality, natural input, and mathematical models of physiology",
+                                    "I spent about a year researching varius areas of meidicine to understand my options, discover my interests, and pick an interesting and impactful research project",
+                                    "Since then I've formed a great committee, developed several prototypes, created a few business plans, and grown as a researcher and person",
+                                    "<a href='http://drryanjames.github.io/#Research' target='_blank'>Click here</a> to learn more about what I've been working on",
+                                ],
+                                summary: [
+                                    "My latest research explores ways to improve medical education using augmented reality (AR), virtual reality (VR), natural input, and mathematical models of physiology. Learning in AR and VR opens up new dimensions for input, and adds a spatial element to learning that makes things easier to remember. It also adds a level of realism to lessons by placing students inside of the learning material.",
+                                    "<a href='http://drryanjames.github.io/#Research' target='_blank'>Click here</a> to learn more about what I've been working on",
+                                ],
+                            },
+                        },
+                        {
+                            when: {
+                                start: "September 2014",
+                                end: "September 2015",
                             },
                             where: {
                                 institution: "University of Washington",
@@ -348,7 +372,7 @@ aboutMeData.research = {
     content: [
         {
             image: "research/haloLens.jpg",
-            text: "My latest research explores ways to improve medical education using augmented reality (AR) and virtual reality (VR). " +
+            text: "My latest research explores ways to improve medical education using augmented reality (AR), virtual reality (VR), natural input, and mathematical models of physiology " +
 				"Learning in AR and VR opens up new dimensions for input, and adds a spatial element to learning that makes things easier to remember. " +
 				"It also adds a level of realism to lessons by placing students inside of the learning material. Here's what I've been working on:<br><br>" +
 				"<iframe width='560' height='315' src='https://www.youtube.com/embed/qSBupUubrnQ' frameborder='0' allowfullscreen></iframe><br>" +
