@@ -65,8 +65,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <None Include=".gitignore" />
     <None Include=".\**\*.html" />
     <None Include=".\**\*.js" />
+    <None Include="styles\sass\main.scss" />
     <None Include=".\**\*.css" />
     <None Include="images\avatar-profile.jpg" />
     <None Include=".\**\*.png" />
