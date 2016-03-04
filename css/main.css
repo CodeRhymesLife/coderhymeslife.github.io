@@ -6,12 +6,24 @@ html, body {
 	height: 100%;
 }
 
+.bigName {
+	position: fixed;
+	text-align: center;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.1;
+	color: #A66829;
+	z-index: -1000
+}
+
 .node {
 	cursor: pointer;
 }
 
 .node circle {
-	stroke: black;
+	stroke: #2968A6;
 	fill: white;
 }
 
@@ -20,7 +32,8 @@ html, body {
 }
 
 .link {
-	stroke: black;
+	stroke: #A66829;
+	fill: #A66829;
 }
 
 p {
@@ -169,6 +182,17 @@ p {
 
 .sectionItem > .description .details .summary {
 	margin-left: 20px;
+}
+
+
+.noSelect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;           /* non-prefixed version, currently
+                                  not supported by any browser */
 }
 
 @media all and (max-width: 768px) {
