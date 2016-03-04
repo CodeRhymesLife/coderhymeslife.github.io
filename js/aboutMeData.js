@@ -107,7 +107,7 @@ aboutMeData.cv = {
                         },
                         {
                             title: "Frameworks",
-                            items: ["a-frame", "three.js", "ASP .NET", "Node JS", "Meteor", "Handlebars", "Play 2.0"]
+                            items: ["a-frame", "three.js", "d3.js", "ASP .NET", "Node JS", "Meteor", "Handlebars", "Play 2.0"]
                         },
                         {
                             title: "Software Tools",
