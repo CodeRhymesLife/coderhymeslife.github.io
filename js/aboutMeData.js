@@ -107,11 +107,11 @@ aboutMeData.cv = {
                         },
                         {
                             title: "Frameworks",
-                            items: ["ASP .NET", "Node JS", "Meteor", "Handlebars", "Play 2.0"]
+                            items: ["a-frame", "three.js", "ASP .NET", "Node JS", "Meteor", "Handlebars", "Play 2.0"]
                         },
                         {
                             title: "Software Tools",
-                            items: ["Visal Studio", "IntelliJ IDEA", "Eclipse", "Microsoft Visio", "Git"]
+                            items: ["Unity", "Unreal Engine", "Visal Studio", "IntelliJ IDEA", "Eclipse", "Microsoft Visio", "Git"]
                         },
                     ],
                 },
