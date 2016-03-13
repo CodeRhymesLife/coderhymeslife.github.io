@@ -375,12 +375,12 @@ aboutMeData.research = {
             text: "My latest research explores ways to improve medical education using augmented reality (AR), virtual reality (VR), natural input, and mathematical models of physiology " +
 				"Learning in AR and VR opens up new dimensions for input, and adds a spatial element to learning that makes things easier to remember. " +
 				"It also adds a level of realism to lessons by placing students inside of the learning material. Here's what I've been working on:<br><br>" +
-				"<iframe width='560' height='315' src='https://www.youtube.com/embed/qSBupUubrnQ' frameborder='0' allowfullscreen></iframe><br>" +
-				"(This was a promotional video for a class project)<br><br>" +
-				"<iframe width='560' height='315' src='https://www.youtube.com/embed/uf-CTVqndEs' frameborder='0' allowfullscreen></iframe><br><br>" +
+				"<iframe width='560' height='315' src='https://www.youtube.com/embed/eYyuEjhD-k8' frameborder='0' allowfullscreen></iframe><br>" +
+				"CadaVR- a virtual reality platform for medical education. This live demo was created by my team and I for a class project<br><br>" +
 				"<iframe width='560' height='315' src='https://www.youtube.com/embed/7Wl3me1mkxc' frameborder='0' allowfullscreen></iframe><br>" +
-				"(<a href='VirtualOrganExplorer/Web/Web.html' target='_blank'>Try Here On Desktop</a>)<br><br>" +
-				"<iframe width='560' height='315' src='https://www.youtube.com/embed/CiExaT2zaKo' frameborder='0' allowfullscreen></iframe><br><br>",
+				"This demo explores ways of visualizing organs in the body for use in medical education. <a href='VirtualOrganExplorer/Web/Web.html' target='_blank'>Try Here On Desktop</a><br><br>" +
+				"<iframe width='560' height='315' src='https://www.youtube.com/embed/CiExaT2zaKo' frameborder='0' allowfullscreen></iframe><br>" +
+                "This demo explores a way to use virtual reality and natural input in medical education<br><br>",
         },
 		{
             image: "research/virtualReality.jpg",
