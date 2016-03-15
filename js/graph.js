@@ -100,9 +100,7 @@ function Graph() {
 	};
 	
 	this.tick = function () {
-    	// Display the links
-
-		 
+	 
     	// Execute the tick handler for each node
     	node.attr("transform",  function (d) {
 			d.x = Math.max(d.r(), Math.min(graph.w - d.r(), d.x));
