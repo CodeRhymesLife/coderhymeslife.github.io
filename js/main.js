@@ -88,7 +88,7 @@ function createGraph() {
 }
 
 function getCircleRadius(node) {
-	return graph.w <= 480 ?
+    return graph.w <= 480 || graph.h <= 480 ?
 			node.radiusOptions.small :
 			node.radiusOptions.large;
 }
