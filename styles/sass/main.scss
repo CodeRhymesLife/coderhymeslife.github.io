@@ -268,7 +268,9 @@ p {
 	.resume ul.descriptionType li {
     	display: block;
     }
+}
 
+@media all and (max-width: 480px), all and (max-height: 480px) {
 	.node .text {
 		font-size: 0.875em;
 	}
