@@ -25,6 +25,10 @@ img.socialIcon {
   background-color: #7F5217;
   border-radius: 10px; }
 
+img.socialIcon:hover {
+  opacity: 0.3;
+  background-color: #174480; }
+
 img.socialIcon.facebook {
   left: 0; }
 
