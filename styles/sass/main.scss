@@ -24,12 +24,11 @@ html, body {
 img.socialIcon {
     position: fixed;
     bottom: 0;
-    width: 100%;
     opacity: 0.1;
     z-index: 100;
-    width: 20em;
+    width: 100px;
     background-color: $mainColor;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 img.socialIcon.facebook {
@@ -231,6 +230,11 @@ p {
 		margin: 0 auto;
 		float: none;
 	}
+
+    img.socialIcon {
+        width: 50px;
+        border-radius: 5px;
+    }
 }
 
 @media all and (max-width: 480px) {

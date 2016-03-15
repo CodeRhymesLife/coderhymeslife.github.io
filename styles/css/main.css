@@ -19,12 +19,11 @@ html, body {
 img.socialIcon {
   position: fixed;
   bottom: 0;
-  width: 100%;
   opacity: 0.1;
   z-index: 100;
-  width: 20em;
+  width: 100px;
   background-color: #7F5217;
-  border-radius: 20px; }
+  border-radius: 10px; }
 
 img.socialIcon.facebook {
   left: 0; }
@@ -188,7 +187,11 @@ p {
 
   .rowOfContent img {
     margin: 0 auto;
-    float: none; } }
+    float: none; }
+
+  img.socialIcon {
+    width: 50px;
+    border-radius: 5px; } }
 @media all and (max-width: 480px) {
   .resume ul.descriptionType li {
     display: block; }
