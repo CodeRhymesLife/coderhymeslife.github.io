@@ -51,7 +51,8 @@ img.socialIcon.linkedIn {
 
 .node circle {
   stroke: #174480;
-  fill: white; }
+  fill: white;
+  opacity: 0.8; }
 
 .node .text {
   font-size: 1.5em;
