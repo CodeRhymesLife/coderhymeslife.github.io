@@ -101,22 +101,7 @@ function Graph() {
 	
 	this.tick = function () {
     	// Display the links
-    	path.attr("d", function(d, element) {
-    	    var dx = d.target.x - d.source.x,
-    	        dy = d.target.y - d.source.y,
-    	        dr = 0,										// Lines have no arc
-    	        theta = Math.atan2(dy, dx) + Math.PI * 2,
-    	        d90 = Math.PI / 2,
-    	        dtxs = d.target.x - d.target.r() * Math.cos(theta),
-    	        dtys = d.target.y - d.target.r() * Math.sin(theta),
-    	        arrowHeadWidth = 5;
-    	    return "M" + d.source.x + "," + d.source.y +
-    	    		"A" + dr + "," + dr + " 0 0 1," + d.target.x + "," + d.target.y +
-    	    		"A" + dr + "," + dr + " 0 0 0," + d.source.x + "," + d.source.y +
-    	    		"M" + dtxs + "," + dtys + "l" + (arrowHeadWidth * Math.cos(d90 - theta) - 10 * Math.cos(theta)) + "," + (-arrowHeadWidth * Math.sin(d90 - theta) - 10 * Math.sin(theta)) +
-    	    		"L" + (dtxs - arrowHeadWidth * Math.cos(d90 - theta) - 10 * Math.cos(theta)) + "," + (dtys + arrowHeadWidth * Math.sin(d90 - theta) - 10 * Math.sin(theta)) +
-    	    		"z";
-    	  });
+
 		 
     	// Execute the tick handler for each node
     	node.attr("transform",  function (d) {
