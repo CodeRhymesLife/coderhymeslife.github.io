@@ -27,10 +27,18 @@ img.socialIcon {
 
 img.socialIcon:hover {
   opacity: 0.3;
-  background-color: #174480; }
+  background-color: #174480;
+  width: 200px; }
 
 img.socialIcon.facebook {
   left: 0; }
+
+img.socialIcon.github {
+  left: 50%;
+  margin-left: -50px; }
+
+img.socialIcon.github:hover {
+  margin-left: -100px; }
 
 img.socialIcon.linkedIn {
   right: 0; }
@@ -195,7 +203,16 @@ p {
 
   img.socialIcon {
     width: 50px;
-    border-radius: 5px; } }
+    border-radius: 5px; }
+
+  img.socialIcon:hover {
+    width: 100px; }
+
+  img.socialIcon.github {
+    margin-left: -25px; }
+
+  img.socialIcon.github:hover {
+    margin-left: -50px; } }
 @media all and (max-width: 480px) {
   .resume ul.descriptionType li {
     display: block; }
