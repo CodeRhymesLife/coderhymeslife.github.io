@@ -375,10 +375,16 @@ aboutMeData.research = {
             text: "My latest research explores ways to improve medical education using augmented reality (AR), virtual reality (VR), natural input, and mathematical models of physiology. " +
 				"Learning in AR and VR opens up new dimensions for input, and adds a spatial element to learning that makes things easier to remember. " +
 				"It also adds a level of realism to lessons by placing students inside of the learning material. Here's what I've been working on:<br><br><br>" +
+
+                "This lesson about the heart demostrates the tip of the iceberg of what's possible for medical education in virtual reality.<br><a href='https://github.com/drryanjames/CadaVR'  target='_blank'>Source Code</a>" +
+				"<div class='aspect-ratio-container'><iframe src='https://www.youtube.com/embed/ONAYPFOZ_Ug' frameborder='0' allowfullscreen></iframe></div><br><br>" +
+                
                 "This demo shows CadaVR--a virtual reality platform for medical education. This live demo was created by my team and I for a class project.<br><a href='https://github.com/drryanjames/CadaVR'  target='_blank'>Source Code</a>" +
 				"<div class='aspect-ratio-container'><iframe src='https://www.youtube.com/embed/eYyuEjhD-k8' frameborder='0' allowfullscreen></iframe></div><br><br>" +
+                
                 "This demo explores ways to visualize organs for use in medical education. <a href='VirtualOrganExplorer/Web/Web.html' target='_blank'>Try Here On Desktop</a>.<br><a href='https://github.com/drryanjames/Virtual-Heart'  target='_blank'>Source Code</a>" +
 				"<div class='aspect-ratio-container'><iframe src='https://www.youtube.com/embed/7Wl3me1mkxc' frameborder='0' allowfullscreen></iframe></div><br><br>" +
+                
                 "This demo explores ways to use virtual reality and natural input in medical education.<br><a href='https://github.com/drryanjames/anatomy-explorer'  target='_blank'>Source Code</a>" +
 				"<div class='aspect-ratio-container'><iframe src='https://www.youtube.com/embed/CiExaT2zaKo' frameborder='0' allowfullscreen></iframe></div>",
         },
