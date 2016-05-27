@@ -374,8 +374,14 @@ aboutMeData.research = {
             image: "research/haloLens.jpg",
             text: "My latest research explores ways to improve medical education using augmented reality (AR), virtual reality (VR), natural input, and mathematical models of physiology. " +
 				"Learning in AR and VR opens up new dimensions for input, and adds a spatial element to learning that makes things easier to remember. " +
-				"It also adds a level of realism to lessons by placing students inside of the learning material. Here's what I've been working on:<br><br><br>" +
+				"It also adds a level of realism to lessons by placing students/trainees inside of the learning material. Here's what I've been working on:<br><br><br>" +
 
+				
+				"This project explores how augmented reality can be used in medical training. During a HoloLens hackathon, my team and I created an augmented reality training environment for the Transseptal Puncture procedure to try and understand how AR could be used to aid the guidance of a catheter in a patient's heart. " +
+				"Understanding this is important because AR has the potential to drastically improve interactions and visual cues during medical planning, training, and procedures, which could improve outcomes. I'm excited to see how AR integrates itself into the medical domain!<br><a href='https://github.com/drryanjames/cadavr-holohacks'  target='_blank'>Source Code</a>" +
+				"<div class='aspect-ratio-container'><iframe src='https://www.youtube.com/embed/Tjz6x_anKW0' frameborder='0' allowfullscreen></iframe></div><br><br>" +
+				
+				
                 "This lesson about the heart demostrates the tip of the iceberg of what's possible for medical education in virtual reality.<br><a href='https://github.com/drryanjames/CadaVR'  target='_blank'>Source Code</a>" +
 				"<div class='aspect-ratio-container'><iframe src='https://www.youtube.com/embed/ONAYPFOZ_Ug' frameborder='0' allowfullscreen></iframe></div><br><br>" +
                 
