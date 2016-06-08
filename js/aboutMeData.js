@@ -373,7 +373,7 @@ aboutMeData.research = {
         {
             image: "research/haloLens.jpg",
             text: "My latest research explores ways to improve medical education and planning using augmented reality (AR), virtual reality (VR), natural input, and mathematical models of physiology. " +
-				"Learning and working in AR and VR opens up new dimensions for input, and adds a spatial element to experiences that makes things easier to understand and remember. " +
+				"Learning and working in AR and VR opens up new dimensions for input, and adds a spatial element to experiences that make things easier to understand and remember. " +
 				"Here's what I've been working on:<br><br><br>" +
 
 				
