@@ -372,9 +372,9 @@ aboutMeData.research = {
     content: [
         {
             image: "research/haloLens.jpg",
-            text: "My latest research explores ways to improve medical education using augmented reality (AR), virtual reality (VR), natural input, and mathematical models of physiology. " +
-				"Learning in AR and VR opens up new dimensions for input, and adds a spatial element to learning that makes things easier to remember. " +
-				"It also adds a level of realism to lessons by placing students/trainees inside of the learning material. Here's what I've been working on:<br><br><br>" +
+            text: "My latest research explores ways to improve medical education and planning using augmented reality (AR), virtual reality (VR), natural input, and mathematical models of physiology. " +
+				"Learning and working in AR and VR opens up new dimensions for input, and adds a spatial element that makes things easier to understand and remember. " +
+				"It also adds a level of realism to experiences by placing students/trainees/workers inside of digital environments. Here's what I've been working on:<br><br><br>" +
 
 				
 				"This project explores how augmented reality can be used in medical training. During a HoloLens hackathon, my team and I created an augmented reality training environment for the Transseptal Puncture procedure to try and understand how AR could be used to aid the guidance of a catheter in a patient's heart. " +
