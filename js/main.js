@@ -10,6 +10,8 @@ Handlebars.registerHelper('renderResumeSection', function () {
         templateName = "educationSectionResumeTemplate";
     else if (this.title == "Technical Skills")
         templateName = "technicalSkillsSectionResumeTemplate";
+    else if (this.title == "Awards and Achievenments")
+        templateName = "awardsAndAchievementsSectionResumeTemplate";
 
     var source = $("#" + templateName).html();
     var template = Handlebars.compile(source);

@@ -68,10 +68,11 @@ p {
 .rowOfContent {
   padding: 20px 0; }
 
-.rowOfContent img {
+.rowOfContent .headerImage {
   float: left;
   margin-right: 5%;
-  padding: 3px; }
+  padding: 3px;
+  width: 100px; }
 
 .clear {
   clear: both; }
@@ -85,9 +86,6 @@ p {
 
 .modal-body p {
   font-size: 1em; }
-
-.modal-body img {
-  width: 100px; }
 
 .resume ul.sections, .resume ul.sectionItems {
   list-style-type: none;
@@ -176,7 +174,7 @@ p {
 .sectionItem > .description .when .start {
   font-weight: 600; }
 
-.sectionItem > .description .details .summary {
+.sectionItem > .description .summary {
   margin-left: 20px; }
 
 .aspect-ratio-container {
@@ -211,7 +209,7 @@ p {
   .rowOfContent {
     padding-bottom: 10px; }
 
-  .rowOfContent img {
+  .rowOfContent .headerImage {
     margin: 0 auto;
     float: none; }
 

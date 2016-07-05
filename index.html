@@ -57,7 +57,7 @@
 	<script id="rowsOfContentTemplate" type="text/x-handlebars-template">
 		{{#content}}
 		<div class='rowOfContent'>
-			<image src="images/{{image}}" />
+			<image class="headerImage" src="images/{{image}}" />
 
 			<p>{{{text}}}</p>
 			<div class='clear'></div>
@@ -139,6 +139,49 @@
 			</ul>
 		</li>
 	</script>
+	
+	<script id="awardsAndAchievementsSectionResumeTemplate" type="text/x-handlebars-template">
+		<li class='section'>
+			<header class='title'>{{title}}</header>
+			<ul class="sectionItems">
+				{{#items}}
+				<li class="sectionItem">
+					<span class='title'>
+						{{description.header}}
+						{{#if link}}
+								(<a href="{{link}}" target="_blank">link</a>)
+						{{/if}}
+					</span>
+					
+					<span class='description'>
+						<header>{{where.institution}}, {{where.location}} &nbsp;&nbsp;<span class='when'>{{when.start}} - {{when.end}}</span></header>
+						
+						<div class="summary">
+							{{#each description.summary}}
+							<p>{{{this}}}</p>
+							{{/each}}
+							
+							<div class="supplements">
+								{{#if description.supplements}}
+								{{#each description.supplements}}
+									{{#if this.video}}
+										<div class='aspect-ratio-container'><iframe src='{{this.video}}' frameborder='0' allowfullscreen></iframe></div>
+									{{/if}}
+									{{#if this.img}}
+										<span><img style="max-width: 100%;" src='{{this.img}}'/></span>
+										<br>
+									{{/if}}
+								{{/each}}
+								{{/if}}
+							</div>
+						</div>
+					</span>
+				</li>
+				{{/items}}
+			</ul>
+		</li>
+	</script>
+	
 	<script id="detailedDescriptionSectionResumeTemplate" type="text/x-handlebars-template">
 		<li class='section'>
 			<header class='title'>{{title}}</header>

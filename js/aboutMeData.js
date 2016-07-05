@@ -99,6 +99,36 @@ aboutMeData.cv = {
                         },
                     ],
                 },
+				{
+                    title: "Awards and Achievenments",
+                    items: [
+                        {
+                            when: {
+                                start: "April 2016",
+                                end: "May 2016",
+                            },
+                            where: {
+                                institution: "University of Washington",
+                                location: "Seattle, WA",
+                            },
+                            link: "http://depts.washington.edu/foster/85000-awarded-students-new-ventures/",
+                            description: {
+                                header: "Business Plan Competition: Perkins Coie Best Innovation/Technology Idea",
+                                summary: [
+                                    "During the 2016 Univeristy of Washington Business Plan Competition, Mark Laughery, Ahmad Aljadaan and I created CadaVR, a virtual reality platform that helps teach students anatomy and physiology. As a result, we were awarded $2,500 for its innovative use of virtual reality in medical education. We are excited to use what we learned during this competition to continue creating products that positively impact medical practices.",
+                                ],
+                                supplements: [
+                                    {
+                                        img: "images/cadavrLogo.png",
+                                    },
+                                    {
+                                        video: "https://www.youtube.com/embed/ONAYPFOZ_Ug",
+                                    },
+                                ]
+                            },
+                        },
+                    ],
+                },
                 {
                     title: "Technical Skills",
                     items: [
