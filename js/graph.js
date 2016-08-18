@@ -61,7 +61,7 @@ function Graph() {
 				
 				// Computes the maximum side length for the image so that the image perfectly fits within the bounds of the circle
 				var getSideLength = function (d) {
-					return Math.sqrt(Math.pow(2*d.r(), 2) / 2);
+					return d.img.isCircle ? 2 * d.r() : Math.sqrt(Math.pow(2*d.r(), 2) / 2);
 				};
 				
 				rootElement.append("svg:image")

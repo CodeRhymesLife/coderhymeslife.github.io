@@ -51,6 +51,7 @@ function createGraph() {
         },
         img: {
             src: "images/professional pic front circle transparent background.png",
+            isCircle: true,
         },
         click: function () {
             window.location.reload();
