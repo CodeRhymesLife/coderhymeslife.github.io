@@ -50,7 +50,7 @@ function createGraph() {
             return getCharge(this);
         },
         img: {
-            src: "images/avatar-profile.png",
+            src: "images/professional pic front circle transparent background.png",
         },
         click: function () {
             window.location.reload();
