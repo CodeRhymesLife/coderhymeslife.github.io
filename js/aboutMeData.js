@@ -409,7 +409,7 @@ aboutMeData.education = {
     content: [
         {
             image: "education/uwbhi.png",
-            text: "I'm currently a PhD student studying <a href='http://bhi.washington.edu'  target='_blank'>Biomedical and Health Informatics</a> @ the University of Washington. Go Huskies!",
+            text: "I'm currently a PhD student studying <a href='http://bime.uw.edu/'  target='_blank'>Biomedical and Health Informatics</a> @ the University of Washington. Go Huskies!",
         },
         {
             image: "education/michigan-logo.jpg",
