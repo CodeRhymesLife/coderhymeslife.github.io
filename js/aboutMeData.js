@@ -1,5 +1,5 @@
 var aboutMeData = {};
-var researchSummary = "My latest research explores ways to improve medical education and planning using augmented reality (AR), virtual reality (VR), natural input, and mathematical models of physiology. Learning and working in AR/VR opens up new dimensions for input, and adds a spatial element to experiences that can make things easier to understand and remember. I'm really excited about the opportunities that these new technologies unlock.";
+var researchSummary = "My latest research explores ways to improve medical education and surgical planning using mixed reality (MR), virtual reality (VR), and natural input. Learning and working in MR/VR opens up new dimensions for input, and adds a spatial element to experiences that can make things easier to understand and remember. I'm really excited about the opportunities that these new technologies unlock.";
 
 aboutMeData.cv = {
     title: "CV",
@@ -246,9 +246,7 @@ aboutMeData.cv = {
                             description: {
                                 header: "Individual Researcher",
                                 bullets: [
-                                    "Exploring ways to improve medical education using augmented reality, virtual reality, natural input, and mathematical models of physiology",
-                                    "I spent about a year researching varius areas of meidicine to understand my options, discover my interests, and pick an interesting and impactful research project",
-                                    "Since then I've formed a great committee, developed several prototypes, created a few business plans, and grown as a researcher and person",
+                                    "Exploring ways to improve interactions with medical images using mixed reality, virtual reality, and natural input",
                                     "<a href='http://drryanjames.github.io/#Research' target='_blank'>Click here</a> to learn more about what I've been working on",
                                 ],
                                 summary: [
