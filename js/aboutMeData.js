@@ -164,15 +164,15 @@ aboutMeData.cv = {
                     items: [
                         {
                             title: "Languages",
-                            items: ["HTML", "CSS", "JavaScript", "C#", "Java", "Scala", "Python", "C", "C++", "SQL", "Powershell"]
+                            items: ["HTML", "CSS", "JavaScript", "C#", "Python", "Java", "Scala", "C", "C++", "SQL", "Powershell"]
                         },
                         {
                             title: "Frameworks",
-                            items: ["a-frame", "three.js", "d3.js", "ASP .NET", "Node JS", "Meteor", "Handlebars", "Play 2.0"]
+                            items: ["Node Js", "A-Frame", "three.js", "d3.js", "ASP .NET", "Meteor", "Handlebars", "Play 2.0"]
                         },
                         {
                             title: "Software Tools",
-                            items: ["Unity", "Unreal Engine", "Visal Studio", "IntelliJ IDEA", "Eclipse", "Microsoft Visio", "Git"]
+                            items: ["Unity", "Unreal Engine", "Blender", "Visal Studio", "IntelliJ IDEA", "Eclipse", "Microsoft Visio", "Git"]
                         },
                     ],
                 },
