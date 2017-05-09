@@ -30,7 +30,7 @@ aboutMeData.cv = {
                                 header: "Co-Founder, CEO, CTO",
                                 bullets: [
                                     "Co-Founded Pear Med with Mark Laughery to bring enterprise virtual and mixed reality software solutions to doctors, patients, and advanced medical students",
-                                    "Deveoped <a href='http://www.pearmedical.com/product.html'>Bosc</a>, a suite of tools that drastically improves the management and visualization of medical images",
+                                    "Developed <a href='http://www.pearmedical.com/product.html'>Bosc</a>, a suite of tools that drastically improves the management and visualization of medical images",
                                     "<a href='http://www.pearmedical.com/team.html'>Partnered with hospitals and research institutions along the west</a> coast to improve quality of care",
                                     "<a href='https://www.youtube.com/channel/UCA7Fn7-CiSKeuzcgsq419rw'>Videos</a>",
                                 ],
