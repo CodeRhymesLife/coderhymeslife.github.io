@@ -191,7 +191,13 @@
 					<header class='title'>
 						{{where.institution}} | {{where.location}}
 						{{#if link}}
-								(<a href="{{link}}" target="_blank">link</a>)
+								{{#if image}}
+									<a href="{{link}}" target="_blank">
+										<img class="logo" src="images/{{image}}" />
+									</a>
+								{{else}}
+									(<a href="{{link}}" target="_blank">link</a>)
+								{{/if}}
 						{{/if}}
 					</header>
 					<div class="description">

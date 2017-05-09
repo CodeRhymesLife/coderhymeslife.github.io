@@ -205,6 +205,9 @@ p {
   	                             /* non-prefixed version, currently
                                     not supported by any browser */ }
 
+.logo {
+  height: 30px; }
+
 @media all and (max-width: 768px) {
   .rowOfContent {
     padding-bottom: 10px; }

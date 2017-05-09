@@ -13,6 +13,36 @@ aboutMeData.cv = {
         {
             sections: [
                 {
+                    title: "Business",
+                    items: [
+                        {
+                            when: {
+                                start: "January 2016",
+                                end: "Present",
+                            },
+                            where: {
+                                institution: "Pear Med",
+                                location: "Seattle, WA",
+                            },
+                            link: "http://www.pearmedical.com",
+                            image: "pear_med_logo_master.png",
+                            description: {
+                                header: "Co-Founder, CEO, CTO",
+                                bullets: [
+                                    "Co-Founded Pear Med with Mark Laughery to bring enterprise virtual and mixed reality software solutions to doctors, patients, and advanced medical students",
+                                    "Deveoped <a href='http://www.pearmedical.com/product.html'>Bosc</a>, a suite of tools that drastically improves the management and visualization of medical images",
+                                    "<a href='http://www.pearmedical.com/team.html'>Partnered with hospitals and research institutions along the west</a> coast to improve quality of care",
+                                    "<a href='https://www.youtube.com/channel/UCA7Fn7-CiSKeuzcgsq419rw'>Videos</a>",
+                                ],
+                                summary: [
+                                    "Mark Laughery and I co-founded Pear Med to bring enterprise virtual and mixed reality software solutions to hospitals and patients. We focus primarily on improving interactions with medical images. Doctors need better tools for collaborating with truly 3D medical visualizations to build better mental models of their patients before surgery, and patients need information that's easier to understand before making complex medical decisions that effect the rest of their lives. So we developed <a href='http://www.pearmedical.com/product.html'>Bosc</a>, a suite of tools that uses virtual and mixed reality to drastically improve the management and visualization of medical images.",
+                                    "<a href='https://www.youtube.com/channel/UCA7Fn7-CiSKeuzcgsq419rw'>Videos</a>",
+                                ],
+                            },
+                        },
+                    ],
+                },
+                {
                     title: "Education",
                     items: [
                         {
