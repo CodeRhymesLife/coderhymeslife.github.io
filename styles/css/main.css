@@ -142,6 +142,11 @@ p {
 .resume .header .name {
   font-size: 3em; }
 
+.resume .header .self {
+  display: block;
+  margin: 0 auto;
+  height: 80px; }
+
 .resume .title {
   font-family: 'Trebuchet MS', Arial; }
 
@@ -230,7 +235,10 @@ p {
     margin-left: -50px; } }
 @media all and (max-width: 480px) {
   .resume ul.descriptionType li {
-    display: block; } }
+    display: block; }
+  .resume .header .self {
+    height: 60px;
+  } }
 @media all and (max-width: 480px), all and (max-height: 480px) {
   .node .text {
     font-size: 0.875em; }
@@ -253,6 +261,9 @@ p {
     top: 0; }
 
   .header a:after {
-    display: none; } }
+    display: none; }
+  .resume .header .self {
+    display: none;
+  } }
 
 /*# sourceMappingURL=main.css.map */

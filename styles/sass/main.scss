@@ -178,6 +178,12 @@ p {
 	font-size: 3em;
 }
 
+.resume .header .self {
+	display: block;
+	margin: 0 auto;
+	height: 80px;
+}
+
 .resume .title {
 	font-family: 'Trebuchet MS', Arial;
 }
@@ -249,7 +255,7 @@ p {
 }
 
 .logo {
-	height: 30px
+	height: 30px;
 }
 
 @media all and (max-width: 768px) {
@@ -283,7 +289,11 @@ p {
 @media all and (max-width: 480px) {
 	.resume ul.descriptionType li {
     	display: block;
-    }
+  }
+
+  .resume .header .self {
+		height: 60px;
+	}
 }
 
 @media all and (max-width: 480px), all and (max-height: 480px) {
