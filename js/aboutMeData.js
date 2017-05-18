@@ -46,7 +46,7 @@ aboutMeData.cv = {
                     title: "Education",
                     items: [
                         {
-                            title: "Biomedical and Health Informatics PhD Candidate",
+                            title: "PhD Candidate, Biomedical and Health Informatics",
                             when: {
                                 start: "September 2014",
                                 end: "Present",
