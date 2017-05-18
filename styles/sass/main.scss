@@ -137,26 +137,6 @@ p {
 	display: none;
 }
 
-.resume ul.descriptionType {
-	margin: 0;
-	padding: 0;
-	float: left;
-}
-
-.resume ul.descriptionType li {
-	display: inline-block;
-	margin-bottom: 5px;
-	padding: 0 5px 0 0;
-}
-
-.resume ul.descriptionType li .button {
-	width: 120px;
-	font-size: 0.875em;
-}
-.resume ul.descriptionType li .button.selected {
-	border-color: #0099FF;
-}
-
 .resume .printCV {
 	float: right;
 	width: auto;
@@ -287,10 +267,6 @@ p {
 }
 
 @media all and (max-width: 480px) {
-	.resume ul.descriptionType li {
-    	display: block;
-  }
-
   .resume .header .self {
 		height: 60px;
 	}
@@ -323,6 +299,10 @@ p {
     position:absolute;
     left:0;
     top:0;
+  }
+
+  .toggle.btn {
+    display: none;
   }
 
   .header a:after {

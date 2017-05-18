@@ -4,12 +4,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<link type="text/css" rel="stylesheet" href="styles/css/bootstrap.css" />
+		<link type="text/css" rel="stylesheet" href="styles/css/bootstrap-toggle.min.css" />
 		<link type="text/css" rel="stylesheet" href="styles/css/main.css" />
 
 		<script src="js/jquery-2.1.1.min.js"></script>
 		<script src="js/jquery.fittext.js"></script>
 		<script src="js/handlebars-v3.0.3.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap-toggle.min.js"></script>
 		<script src="js/d3.v3.min.js"></script>
 
 		<script src="js/aboutMeData.js"></script>
@@ -66,22 +68,7 @@
 	</script>
 
 	<script id="cvTemplate" type="text/x-handlebars-template">
-		<ul class="descriptionType">
-			<li>
-				<div onclick="$('.descriptionType .bullets').removeClass('selected'); $(this).addClass('selected'); $('.description .details .bullets').hide(); $('.description .details .summary').show();"
-					class="button summary">
-					Detailed Summary
-				</div>
-			</li>
-
-			<li>
-				<div onclick="$('.descriptionType .summary').removeClass('selected'); $(this).addClass('selected'); $('.description .details .summary').hide(); $('.description .details .bullets').show();"
-					class="button bullets">
-					Bullet Summary
-				</div>
-			</li>
-		</ul>
-
+		<input class='toggleResumeSummaryType' type="checkbox" onclick="toggleResumeSummaryType()" data-width="200" data-height="20" />
 		<img class="button printCV" src="images/printer.svg" onclick="printElement(document.getElementsByClassName('modal-body')[0]);"/>
 
 		<div class="clear"></div>
