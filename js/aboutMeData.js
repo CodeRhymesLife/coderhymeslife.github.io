@@ -30,7 +30,7 @@ aboutMeData.cv = {
                                 header: "Co-Founder, CEO, CTO",
                                 bullets: [
                                     "Co-Founded Pear Med with Mark Laughery to bring enterprise virtual and mixed reality software solutions to doctors, patients, and advanced medical students",
-                                    "Developed <a href='http://www.pearmedical.com/product.html'>Bosc</a>, a suite of tools that drastically improves the management and visualization of medical images",
+                                    "Developed <a href='http://www.pearmedical.com/product.html'>Bosc</a>, a suite of tools that improves the management and visualization of medical images",
                                     "<a href='http://www.pearmedical.com/team.html'>Partnered with hospitals and research institutions along the west</a> coast to improve quality of care",
                                     "<a href='https://www.youtube.com/channel/UCA7Fn7-CiSKeuzcgsq419rw'>Videos</a>",
                                 ],
@@ -130,8 +130,25 @@ aboutMeData.cv = {
                     ],
                 },
 				{
-                    title: "Awards and Achievenments",
+                    title: "Awards and Achievements",
                     items: [
+                        {
+                            when: {
+                                start: "September 2014",
+                                end: "September 2017",
+                            },
+                            where: {
+                                institution: "National Library of Medicine (NLM)",
+                                location: "Seattle, WA",
+                            },
+                            link: "https://www.nlm.nih.gov/ep/GrantTrainInstitute.html#13",
+                            description: {
+                                header: "Biomedical and Health Informatics Predoctoral Trainee Fellow",
+                                summary: [
+                                    "Received support for predoctoral trainee appointment in Biomedical and Health Informatics, which allowed me to focus on research and education.",
+                                ],
+                            },
+                        },
                         {
                             when: {
                                 start: "April 2016",
@@ -145,7 +162,7 @@ aboutMeData.cv = {
                             description: {
                                 header: "Business Plan Competition: Perkins Coie Best Innovation/Technology Idea",
                                 summary: [
-                                    "During the 2016 Univeristy of Washington Business Plan Competition, Mark Laughery, Ahmad Aljadaan and I created CadaVR, a virtual reality platform that helps teach students anatomy and physiology. As a result, we were awarded $2,500 for its innovative use of virtual reality in medical education. We are excited to use what we learned during this competition to continue creating products that positively impact medical practices.",
+                                    "During the 2016 University of Washington Business Plan Competition, Mark Laughery, Ahmad Aljadaan and I created CadaVR, a virtual reality platform that helps teach students anatomy and physiology. As a result, we were awarded $2,500 for its innovative use of virtual reality in medical education. We are excited to use what we learned during this competition to continue creating products that positively impact medical practices.",
                                 ],
                                 supplements: [
                                     {
@@ -172,7 +189,7 @@ aboutMeData.cv = {
                         },
                         {
                             title: "Software Tools",
-                            items: ["Unity", "Unreal Engine", "Blender", "Visal Studio", "IntelliJ IDEA", "Eclipse", "Microsoft Visio", "Git"]
+                            items: ["Unity", "Unreal Engine", "Blender", "Visual Studio", "IntelliJ IDEA", "Eclipse", "Microsoft Visio", "Git"]
                         },
                     ],
                 },
@@ -358,7 +375,7 @@ aboutMeData.cv = {
                     ],
                 },
                 {
-                    title: "Summer Interships",
+                    title: "Summer Internships",
                     items: [
                         {
                             when: {
@@ -386,7 +403,7 @@ aboutMeData.cv = {
                             },
                             where: {
                                 institution: "Ford Motor Company",
-                                location: "Dearborne, MI",
+                                location: "Dearborn, MI",
                             },
                             description: {
                                 header: "Data Architect Intern",
