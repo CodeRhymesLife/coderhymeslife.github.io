@@ -134,23 +134,6 @@ aboutMeData.cv = {
                     items: [
                         {
                             when: {
-                                start: "September 2014",
-                                end: "September 2017",
-                            },
-                            where: {
-                                institution: "National Library of Medicine (NLM)",
-                                location: "Seattle, WA",
-                            },
-                            link: "https://www.nlm.nih.gov/ep/GrantTrainInstitute.html#13",
-                            description: {
-                                header: "Biomedical and Health Informatics Predoctoral Trainee Fellow",
-                                summary: [
-                                    "Received support for predoctoral trainee appointment in Biomedical and Health Informatics, which allowed me to focus on research and education.",
-                                ],
-                            },
-                        },
-                        {
-                            when: {
                                 start: "April 2016",
                                 end: "May 2016",
                             },
@@ -172,6 +155,23 @@ aboutMeData.cv = {
                                         video: "https://www.youtube.com/embed/ONAYPFOZ_Ug",
                                     },
                                 ]
+                            },
+                        },
+                        {
+                            when: {
+                                start: "September 2014",
+                                end: "September 2017",
+                            },
+                            where: {
+                                institution: "National Library of Medicine (NLM)",
+                                location: "Seattle, WA",
+                            },
+                            link: "https://www.nlm.nih.gov/ep/GrantTrainInstitute.html#13",
+                            description: {
+                                header: "Biomedical and Health Informatics Predoctoral Trainee Fellow",
+                                summary: [
+                                    "Received support for predoctoral trainee appointment in Biomedical and Health Informatics, which allowed me to focus on research and education.",
+                                ],
                             },
                         },
                     ],
