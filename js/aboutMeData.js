@@ -1,5 +1,5 @@
 var aboutMeData = {};
-var researchSummary = "My latest research explores ways to improve medical education and surgical planning using mixed reality (MR), virtual reality (VR), and natural input. Learning and working in MR/VR opens up new dimensions for input, and adds a spatial element to experiences that can make things easier to understand and remember. I'm really excited about the opportunities that these new technologies unlock.";
+var researchSummary = "My latest research explores ways to improve medical education, procedural planning and procedural guidance using mixed reality (MR), virtual reality (VR), and 3D printing. Learning and working in MR/VR opens up new dimensions for input, and adds a spatial element to experiences that can make things easier to understand and remember. 3D printing offers a physical medium that can be visualized and augmented with VR and MR to create incredible experiences. I'm really excited about the opportunities that these technologies unlock.";
 
 aboutMeData.cv = {
     title: "CV",
@@ -21,21 +21,21 @@ aboutMeData.cv = {
                                 end: "Present",
                             },
                             where: {
-                                institution: "Pear Med",
+                                institution: "Pyrus, Inc",
                                 location: "Seattle, WA",
                             },
-                            link: "http://www.pearmedical.com",
-                            image: "pear_med_logo_master.png",
+                            link: "http://www.pyrusmedical.com",
+                            image: "pear-logo-2017.png",
                             description: {
-                                header: "Co-Founder, CEO, CTO",
+                                header: "Co-Founder, CTO",
                                 bullets: [
-                                    "Co-Founded Pear Med with Mark Laughery to bring enterprise virtual and mixed reality software solutions to doctors, patients, and advanced medical students",
-                                    "Developed <a href='http://www.pearmedical.com/product'>Bosc</a>, a suite of tools that improves the management and visualization of medical images",
-                                    "<a href='http://www.pearmedical.com/team'>Partnered with hospitals and research institutions along the west</a> coast to improve quality of care",
+                                    "Co-Founded Pyrus with Mark Laughery, Ross Drake and Steve Seslar, where we use technology to simplify care, making it more accessible, cheaper, and easier to perfrom",
+                                    "Developed <a href='http://www.pyrusmedical.com/product'>Bosc</a>, a suite of tools that improves the management and visualization of medical images",
+                                    "<a href='http://www.pyrusmedical.com/team'>Partnered with hospitals and research institutions along the west</a> coast to improve quality of care",
                                     "<a href='https://www.youtube.com/channel/UCA7Fn7-CiSKeuzcgsq419rw'>Videos</a>",
                                 ],
                                 summary: [
-                                    "Mark Laughery and I co-founded Pear Med to bring enterprise virtual and mixed reality software solutions to hospitals and patients. We focus primarily on improving interactions with medical images. Doctors need better tools for collaborating with truly 3D medical visualizations to build better mental models of their patients before surgery, and patients need information that's easier to understand before making complex medical decisions that effect the rest of their lives. So we developed <a href='http://www.pearmedical.com/product'>Bosc</a>, a suite of tools that uses virtual and mixed reality to drastically improve the management and visualization of medical images.",
+                                    "Mark Laughery, Ross Drake, Steve Seslar and I co-founded Pyrus to simplify care, making it more accessible, cheaper, and easier to perfrom through the application of technology. Doctors need better, cheaper tools to improve their quality of care in today's healthcare market. Patients need to digest more information quicker in order to understand complex medical decisions that affect their quality of life. Our first product, <a href='http://www.pyrusmedical.com/product'>Bosc</a>, is a suite of tools that uses virtual and mixed reality to drastically improve the management and visualization of medical images.",
                                     "<a href='https://www.youtube.com/channel/UCA7Fn7-CiSKeuzcgsq419rw'>Videos</a>",
                                 ],
                             },
@@ -185,11 +185,11 @@ aboutMeData.cv = {
                         },
                         {
                             title: "Frameworks",
-                            items: ["Node Js", "A-Frame", "three.js", "d3.js", "ASP .NET", "Meteor", "Handlebars", "Play 2.0"]
+                            items: ["Node Js", "React", "A-Frame", "three.js", "d3.js", "ASP .NET", "Meteor", "Handlebars", "Play 2.0"]
                         },
                         {
                             title: "Software Tools",
-                            items: ["Unity", "Unreal Engine", "Blender", "Visual Studio", "IntelliJ IDEA", "Eclipse", "Microsoft Visio", "Git"]
+                            items: ["Unity", "Unreal Engine", "Blender", "Visual Studio", "Gimp", "IntelliJ IDEA", "Eclipse", "Microsoft Visio", "Git"]
                         },
                     ],
                 },
@@ -263,7 +263,7 @@ aboutMeData.cv = {
                             description: {
                                 header: "Individual Researcher",
                                 bullets: [
-                                    "Exploring ways to improve interactions with medical images using mixed reality, virtual reality, and natural input",
+                                    "Exploring ways to improve medical practices using mixed reality, virtual reality, and 3D printing",
                                     "<a href='http://drryanjames.github.io/#Research' target='_blank'>Click here</a> to learn more about what I've been working on",
                                 ],
                                 summary: [
@@ -449,6 +449,10 @@ aboutMeData.research = {
         {
             image: "research/haloLens.jpg",
             text: researchSummary + " Here's what I've been working on:<br><br><br>" +
+
+                "<a href='http://www.pyrusmedical.com/product'>Bosc</a> brings patient-specific CT and MRI data into an intuitive 3D virtual reality environment." +
+				"Medical teams control these holograms to collaboratively plan, educate patients, and reduce uncertainty in the operating room." +
+				"<div class='aspect-ratio-container'><iframe src='https://www.youtube.com/embed/H1NS6GyttLg' frameborder='0' allowfullscreen></iframe></div><br><br>" +
 
 				
 				"This project explores how augmented reality can be used in medical training. During a HoloLens hackathon, my team and I created an augmented reality training environment for the Transseptal Puncture procedure to try and understand how AR could be used to aid the guidance of a catheter in a patient's heart. " +
