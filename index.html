@@ -68,7 +68,6 @@
 	</script>
 
 	<script id="cvTemplate" type="text/x-handlebars-template">
-		<input class='toggleResumeSummaryType' type="checkbox" onclick="toggleResumeSummaryType()" data-width="200" data-height="20" />
 		<img class="button printCV" src="images/printer.svg" onclick="printElement(document.getElementsByClassName('modal-body')[0]);"/>
 
 		<div class="clear"></div>
@@ -94,10 +93,6 @@
 			<div class='clear'></div>
 		</div>
 		{{/content}}
-		<script>
-			// Select the detailed summary view by default
-			$(".descriptionType .bullets").click();
-		</script>
 	</script>
 
 	<script id="educationSectionResumeTemplate" type="text/x-handlebars-template">
@@ -108,6 +103,25 @@
 				<li class="sectionItem">
 					<header><label class="title">{{title}}</label><span class='when'> - {{when.start}} - {{when.end}}</span></header>
 					<header class='description'>{{where.institution}} | {{where.location}}</header>
+
+					<div class="description">
+						<div class="details">
+							<div class="summary">
+								{{#if description.summary}}
+								{{#each description.summary}}
+								<p>{{{this}}}</p>
+								{{/each}}
+								{{/if}}
+							</div>
+							<ul class="bullets">
+								{{#if description.bullets}}
+								{{#each description.bullets}}
+								<li>{{{this}}}</li>
+								{{/each}}
+								{{/if}}
+							</ul>
+						</div>
+					</div>
 				</li>
 				{{/items}}
 			</ul>
@@ -119,7 +133,7 @@
 			<header class='title'>{{title}}</header>
 			<ul class="sectionItems">
 				{{#items}}
-				<li class="sectionItem">
+				<li class="sectionItem skills">
 					<span class='title'>{{title}}:</span>
 					<span class='description'>{{printArray items}}</span>
 				</li>
@@ -189,23 +203,26 @@
 						{{/if}}
 					</header>
 					<div class="description">
-						<header class='description'>{{description.header}} &nbsp;&nbsp;<span class='when'><span class="start">{{when.start}}</span> - {{when.end}}</span></header>
-						<div class="details">
-							<ul class="bullets">
-								{{#each description.bullets}}
-								<li>{{{this}}}</li>
-								{{/each}}
-							</ul>
+						<header class='description'>
+							{{description.header}}
+							{{#if when}}
+							&nbsp;&nbsp;<span class='when'><span class="start">{{when.start}}</span> - {{when.end}}</span>
+							{{/if}}
+						</header>
 
+						<div class="details">
 							<div class="summary">
 								{{#if description.summary}}
 								{{#each description.summary}}
 								<p>{{{this}}}</p>
 								{{/each}}
-								{{else}}
-								<p>DETAILED SUMMARY COMING SOON. <button onclick="$('.descriptionType .bullets').click();">CLICK HERE TO VIEW A BULLETED SUMMARY</button>.</p>
 								{{/if}}
 							</div>
+							<ul class="bullets">
+								{{#each description.bullets}}
+								<li>{{{this}}}</li>
+								{{/each}}
+							</ul>
 						</div>
 					</div>
 				</li>

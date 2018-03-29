@@ -150,14 +150,6 @@ function attachModalEvents() {
         modal.find('.modal-body')
             .addClass(aboutMeData.class || "")
             .html(template(aboutMeData));
-
-        $('.toggleResumeSummaryType').bootstrapToggle({
-            on: 'Detailed Summary',
-            off: 'Bullet Summary',
-        });
-
-        $('.toggleResumeSummaryType').change(toggleResumeSummaryType)
-        toggleResumeSummaryType();
     });
 
     $(window).bind('hashchange', navigate);
@@ -177,16 +169,5 @@ function navigate() {
     if (aboutMeData[hash]) {
         $('#aboutMeDescriptionmodal').data("aboutMeData", aboutMeData[hash])
         $('#aboutMeDescriptionmodal').modal('show');
-    }
-}
-
-function toggleResumeSummaryType() {
-    if($(this).prop('checked')) {
-        $('.description .details .bullets').hide()
-        $('.description .details .summary').show()
-    }
-    else {
-        $('.description .details .summary').hide()
-        $('.description .details .bullets').show()
     }
 }

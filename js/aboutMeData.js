@@ -1,5 +1,5 @@
 var aboutMeData = {};
-var researchSummary = "My latest research explores ways to improve medical education, procedural planning and procedural guidance using mixed reality (MR), virtual reality (VR), and 3D printing. Learning and working in MR/VR opens up new dimensions for input, and adds a spatial element to experiences that can make things easier to understand and remember. 3D printing offers a physical medium that can be visualized and augmented with VR and MR to create incredible experiences. I'm really excited about the opportunities that these technologies unlock.";
+var researchSummary = "My latest research explores ways to improve medical education, procedural planning and procedural guidance using mixed reality (MR), virtual reality (VR), sensors and 3D printing. Learning and working in MR/VR opens up new dimensions for input, and adds a spatial element to experiences that can make things easier to understand and remember. 3D printing offers a physical medium that can be visualized and augmented with VR and MR to create incredible experiences. I'm really excited about the opportunities that these technologies unlock.";
 
 aboutMeData.cv = {
     title: "CV",
@@ -16,10 +16,6 @@ aboutMeData.cv = {
                     title: "Business",
                     items: [
                         {
-                            when: {
-                                start: "January 2016",
-                                end: "Present",
-                            },
                             where: {
                                 institution: "Pyrus, Inc",
                                 location: "Seattle, WA",
@@ -29,14 +25,14 @@ aboutMeData.cv = {
                             description: {
                                 header: "Co-Founder, CTO",
                                 bullets: [
-                                    "Co-Founded Pyrus with Mark Laughery, Ross Drake and Steve Seslar, where we use technology to simplify care, making it more accessible, cheaper, and easier to perfrom",
-                                    "Developed <a href='http://www.pyrusmedical.com/product'>Bosc</a>, a suite of tools that improves the management and visualization of medical images",
-                                    "<a href='http://www.pyrusmedical.com/team'>Partnered with hospitals and research institutions along the west</a> coast to improve quality of care",
-                                    "<a href='https://www.youtube.com/channel/UCA7Fn7-CiSKeuzcgsq419rw'>Videos</a>",
+                                    "Conducting Human-Computer-Interaction usability research at the nexus of medicine, 3D printing, sensors, virtual and mixed reality",
+                                    "Creating and executing business strategies by setting goals, understanding problems, designing solutions, and executing",
+                                    "Bringing a product from bench to bedside through user research, prototyping, testing, and iteration",
+                                    "Managing a team of software and hardware developers",
+                                    "Discovering something new about myself every day",
                                 ],
                                 summary: [
-                                    "Mark Laughery, Ross Drake, Steve Seslar and I co-founded Pyrus to simplify care, making it more accessible, cheaper, and easier to perfrom through the application of technology. Doctors need better, cheaper tools to improve their quality of care in today's healthcare market. Patients need to digest more information quicker in order to understand complex medical decisions that affect their quality of life. Our first product, <a href='http://www.pyrusmedical.com/product'>Bosc</a>, is a suite of tools that uses virtual and mixed reality to drastically improve the management and visualization of medical images.",
-                                    "<a href='https://www.youtube.com/channel/UCA7Fn7-CiSKeuzcgsq419rw'>Videos</a>",
+                                    "We are a medical technology company leveraging virtual and mixed reality to build a simpler way to perform catheter ablations. We aim to increase ablation accuracy while decreasing costs to improve outcomes and increase access to care. An Arrhythmia, or irregular heart beat, can lead to serious complications such as stroke, heart attack and premature death. A catheter ablation is the definitive treatment for an arrhythmia, but its high failure rate and expensive equipment limit its quality and reach. Virtual and mixed reality offer a new way to visualize and interact with medical information that make catheter ablations easier to perform.",
                                 ],
                             },
                         },
@@ -54,6 +50,16 @@ aboutMeData.cv = {
                             where: {
                                 institution: "University of Washington",
                                 location: "Seattle, WA",
+                            },
+                            description: {
+                                bullets: [
+                                    "Aim 1: Create an open simulation platform made from patient-specific 3D printing, sensors and application programming interfaces",
+                                    "Aim 2: Develop novel virtual and mixed reality catheter navigation systems on top of the simulator created in Aim 1",
+                                    "Aim 3: Evaluate the usability of the novel virtual and mixed reality catheter navigation systems created in Aim 2",
+                                ],
+                                summary: [
+                                    "I am conducting usability research by developing and testing a procedural simulation platform that uses sensors, 3D printing, virtual and mixed reality to better understand how the next generation of technology will impact cardiac catheterization procedures.",
+                                ],
                             },
                         },
                         {
@@ -90,16 +96,11 @@ aboutMeData.cv = {
                                     "Tailored lesson plans to students' interests, which included gaming, media, sports, music, and their prospective occupations",
                                     "Developed several in-class projects, including <a href='https://github.com/drryanjames/Invaders' target='_blank'>a final project</a> structured to teach and evaluate students based on class learning objectives",
                                     "Helped excelling students develop personal and unique final projects from scratch to give them experience working on end-end development",
-                                    "Programming concepts: types, printlns, methods, if/else if/else, loops, arrays, parameters and returns",
+                                    "Taught programming concepts: types, printlns, methods, if/else if/else, loops, arrays, parameters and returns",
                                     "Development skills: GitHub, JGrasp, IntelliJ IDEA, working in teams, breaking problems down into small, achievable pieces"
                                 ],
                                 summary: [
-                                    "What an experience! I love teaching, especially when I'm collaborating with a great group of leaders, and teaching a class of extremely bright rising 11th and 12th grade students who are hungry to learn. This summer was a blast.",
-                                    "I co-taught 'Intro to Computer Science (Java)' over a period of 6 weeks with <a href='https://www.linkedin.com/in/kaseychampion' target='_blank'>Kasey Champion</a>, an excellent teacher and program manager at Microsoft. We were both too busy to teach alone, so we decided to collaborate. Looking back, that was the best decision I could have made. I learned a ton from her, including how to be myself while teaching effectively, and the value in starting each class with a warm up that uses the past to get students thinking about their future. We each lectured two days a week and collaborated on a daily basis to ensure we were starting where the other left off. It was great to have someone to lean on and learn from throughout the summer.",
-                                    "At the start of the summer we took a poll of students' interests, and used those interests to create tailored lesson plans. If each class were a quilt, then each quilt was threaded with ideas and concepts reinforced by student interests. For example, while teaching if/else if/else branching logic, I pulled up<a href='https://www.youtube.com/watch?v=swiXG0A56rw' target='_blank'> a video of League of Legends character deaths</a> to illustrate how code branching logic can be used to detect if a player is alive or dead. The students really enjoyed and learned from these types of associations because they could relate to them, which made thinking about the concepts we were teaching more real. These moment also became important metacognitive moments for myself and Kasey--they forced us to think about the way we were teaching the class. Each student had different interests and thus would learn differently from each example we used in class. To cast the widest net we carefully threaded each class with multiple real world examples to increase the chance that every student absorbed what we were trying to teach. It became evident that this method was effective when we evaluated student projects.",
-                                    "On a weekly, and occasionally on a daily basis Kasey and I developed fun and thought provoking in class projects that students worked through to solidify concepts they learned in class (<a href='https://github.com/drryanjames/MSUB-Add-Function' target='_blank'>here's one of the more simple projects</a> that we put on GitHub). Many of these projects were tailored to the students' interests, ranging from a Netflix login project to a sports stat tracker project. Each project was effective, but I am most proud of <a href='https://github.com/drryanjames/Invaders' target='_blank'>the final project</a>--one I like to think of as a game in a game. The outer game was Space Invaders; however, I removed key elements (e.g. player movement and menu controls) of the outer game to create a fun project that students used to collaboratively solidify programming concepts and gain programming experience.",
-                                    "There were several students who chose not to work on Space Invaders. Instead, they developed their own projects from scratch. This gave Kasey and I the opportunity to teach these students how to collaboratively develop a software application from start to finish.",
-                                    "Teaching this class exemplified why it's imperative that every student's opportunities to learn and grow be maximized, despite where they come from. Every student in the MSUB program comes from a disadvantaged background, and every student in my class showed me why our future is in good hands. Motivated, bright, creative, inventive and so, so much more, these young adults clearly demonstrated that they can make the most of great opportunity.",
+                                    "Teaching this class exemplified why it's imperative that every student's opportunities to learn and grow be maximized, despite where they come from or how they learn. Every student in the MSUB program comes from a disadvantaged background, and every student in my class demonstrated the potential to change the world with technology.",
                                 ],
                             },
                         },
@@ -121,56 +122,7 @@ aboutMeData.cv = {
                                     "Trained new TSP members as efforts grew",
                                 ],
                                 summary: [
-                                    "At Technology Access Foundation (TAF) it was my privilege to learn and grow as a teacher while teaching computer science to 10th and 11th graders. I was given the opportunity to help develop curriculum and continually improve that curriculum after each class. This iterative learning experience illustrated how challenging teaching is. Each student learns at least a little differently than every other student in class, and developing a lesson plan that reflects each student's abilities and learning style is a challenging task. Fortunately, I was surrounded by a great group of colleagues and teachers that guided me through this process.",
-                                    "If I had to choose, I would say the most important takeaway I gained from this expreience is that a teacher is just as much a student as the members of his or her class. I learned how to prepare lessons; how to leverage students' knowledge to teach them on a more personal level; how to collaborate with other teachers to motivate, challenge and develop young minds; and much more, including how to break down a multi-year curriculum into semester, week and class length lesson plans.",
-                                    "+++ Special thanks to David Harris for leading us towards positive change +++"
-                                ],
-                            },
-                        },
-                    ],
-                },
-				{
-                    title: "Awards and Achievements",
-                    items: [
-                        {
-                            when: {
-                                start: "April 2016",
-                                end: "May 2016",
-                            },
-                            where: {
-                                institution: "University of Washington",
-                                location: "Seattle, WA",
-                            },
-                            link: "http://depts.washington.edu/foster/85000-awarded-students-new-ventures/",
-                            description: {
-                                header: "Business Plan Competition: Perkins Coie Best Innovation/Technology Idea",
-                                summary: [
-                                    "During the 2016 University of Washington Business Plan Competition, Mark Laughery, Ahmad Aljadaan and I created CadaVR, a virtual reality platform that helps teach students anatomy and physiology. As a result, we were awarded $2,500 for its innovative use of virtual reality in medical education. We are excited to use what we learned during this competition to continue creating products that positively impact medical practices.",
-                                ],
-                                supplements: [
-                                    {
-                                        img: "images/cadavrLogo.png",
-                                    },
-                                    {
-                                        video: "https://www.youtube.com/embed/ONAYPFOZ_Ug",
-                                    },
-                                ]
-                            },
-                        },
-                        {
-                            when: {
-                                start: "September 2014",
-                                end: "September 2017",
-                            },
-                            where: {
-                                institution: "National Library of Medicine (NLM)",
-                                location: "Seattle, WA",
-                            },
-                            link: "https://www.nlm.nih.gov/ep/GrantTrainInstitute.html#13",
-                            description: {
-                                header: "Biomedical and Health Informatics Predoctoral Trainee Fellow",
-                                summary: [
-                                    "Received support for predoctoral trainee appointment in Biomedical and Health Informatics, which allowed me to focus on research and education.",
+                                    "The most important takeaway I gained from this experience is that a teacher is just as much a student as the members of his or her class. I learned how to prepare lessons; how to leverage students' knowledge to teach them on a more personal level; how to collaborate with other teachers to motivate, challenge and develop young minds; and much more, including how to break down a multi-year curriculum into semester, week and class length lesson plans.",
                                 ],
                             },
                         },
@@ -180,8 +132,12 @@ aboutMeData.cv = {
                     title: "Technical Skills",
                     items: [
                         {
+                            title: "Platforms",
+                            items: ["Virtual Reality", "Mixed Reality", "Server", "Web", "Mobile"],
+                        },
+                        {
                             title: "Languages",
-                            items: ["HTML", "CSS", "JavaScript", "C#", "Python", "Java", "Scala", "C", "C++", "SQL", "Powershell"]
+                            items: ["HTML", "CSS", "JavaScript", "C#", "Python", "Java", "C", "C++", "SQL", "Powershell"]
                         },
                         {
                             title: "Frameworks",
@@ -190,6 +146,10 @@ aboutMeData.cv = {
                         {
                             title: "Software Tools",
                             items: ["Unity", "Unreal Engine", "Blender", "Visual Studio", "Gimp", "IntelliJ IDEA", "Eclipse", "Microsoft Visio", "Git"]
+                        },
+                        {
+                            title: "Other",
+                            items: ["3D modeling", "3D printing", "Sensors", "Computer Hardware"]
                         },
                     ],
                 },
@@ -263,12 +223,12 @@ aboutMeData.cv = {
                             description: {
                                 header: "Individual Researcher",
                                 bullets: [
-                                    "Exploring ways to improve medical practices using mixed reality, virtual reality, and 3D printing",
-                                    "<a href='http://drryanjames.github.io/#Research' target='_blank'>Click here</a> to learn more about what I've been working on",
+                                    "Built a catheterization simulation platform using 3D printing, full stack development, virtual and mixed reality",
+                                    "Conducting usability studies to understand how to use these technologies to improve care delivery",
+                                    "<a href='http://drryanjames.github.io/#Research' target='_blank'>Click here</a> to learn more about what I've worked on",
                                 ],
                                 summary: [
                                     researchSummary,
-                                    "<a href='http://drryanjames.github.io/#Research' target='_blank'>Click here</a> to learn more about what I've been working on",
                                 ],
                             },
                         },
@@ -369,6 +329,53 @@ aboutMeData.cv = {
                                     "Assisted Professor Jeffrey Fessler in improving the FDK 3D image reconstruction method.",
                                     "Accelerated the FDK back-projection algorithm using a GPU to parallelize complex equations.",
                                     "Optimized GPU thread batching and reduced memory access latency.",
+                                ],
+                            },
+                        },
+                    ],
+                },
+                {
+                    title: "Awards and Achievements",
+                    items: [
+                        {
+                            when: {
+                                start: "April 2016",
+                                end: "May 2016",
+                            },
+                            where: {
+                                institution: "University of Washington",
+                                location: "Seattle, WA",
+                            },
+                            link: "http://depts.washington.edu/foster/85000-awarded-students-new-ventures/",
+                            description: {
+                                header: "Business Plan Competition: Perkins Coie Best Innovation/Technology Idea",
+                                summary: [
+                                    "Created <a href='https://www.youtube.com/watch?v=ONAYPFOZ_Ug' target='_blank'>CadaVR</a>, a virtual reality platform that helps teach students anatomy and physiology. As a result, we were awarded $2,500 for innovative use of virtual reality in medical education.",
+                                ],
+                                supplements: [
+                                    {
+                                        img: "images/cadavrLogo.png",
+                                    },
+                                    {
+                                        video: "https://www.youtube.com/embed/ONAYPFOZ_Ug",
+                                    },
+                                ]
+                            },
+                        },
+                        {
+                            when: {
+                                start: "September 2014",
+                                end: "September 2017",
+                            },
+                            where: {
+                                institution: "National Library of Medicine (NLM)",
+                                location: "Seattle, WA",
+                            },
+                            link: "https://www.nlm.nih.gov/ep/GrantTrainInstitute.html#13",
+                            description: {
+                                header: "Biomedical and Health Informatics Predoctoral Trainee Fellow",
+                                summary: [
+                                    "Received support for predoctoral trainee appointment in Biomedical and Health Informatics providing the first brick in the foundation that I've built upon to feed my curiosity.",
                                 ],
                             },
                         },
