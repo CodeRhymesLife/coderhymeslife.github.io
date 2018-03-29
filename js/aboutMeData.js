@@ -58,7 +58,7 @@ aboutMeData.cv = {
                                     "Aim 3: Evaluate the usability of the novel virtual and mixed reality catheter navigation systems created in Aim 2",
                                 ],
                                 summary: [
-                                    "I am conducting usability research by developing and testing a procedural simulation platform that uses sensors, 3D printing, virtual and mixed reality to better understand how the next generation of technology will impact cardiac catheterization procedures.",
+                                    "I am conducting usability research by developing and testing a procedural simulation platform that uses sensors, patient-specific 3D printing, virtual and mixed reality to better understand how the next generation of technology will impact cardiac catheterization procedures.",
                                 ],
                             },
                         },
