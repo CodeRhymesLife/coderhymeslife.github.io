@@ -13,7 +13,7 @@ aboutMeData.cv = {
         {
             sections: [
                 {
-                    title: "Business",
+                    title: "Entrepreneurship",
                     items: [
                         {
                             where: {
