@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
+
+        <!-- Bootstrap core CSS -->
+        <link href="../styles/css/bootstrap.css" rel="stylesheet">
+        <link href="../styles/css/bootstrap-toggle.min.css" rel="stylesheet">
+        <link href="../styles/css/main.css" rel="stylesheet">
+
+        <title>Ryan James</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <span class="glyphicon" aria-hidden="true"></span>
+                        <a class="navbar-brand" href="#">Ryan James</a> 
+                    </a>
+                </div>
+
+                <div class="navbar-right"> 
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Software</a></li>
+                        <li><a href="#">Healthcare</a></li>
+                        <li><a href="#">Business</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <main>
+            <div class="container">
+                <div class="page aboutMe">
+                    <h1>About Me</h1>
+                    <p>I enjoy understanding health problems, developing solutions, and building relationships. My background is in:</p>
+                        <div class="row interests">
+                            <div class="col-sm-4">
+                                <span class="glyphicon glyphicon-console" aria-hidden="true"></span>
+                                <h4>Software</h4>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <span class="glyphicon glyphicon-object-align-left" aria-hidden="true"></span>
+                                <h4>Healthcare</h4>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                                <h4>Entrepreneurship</h4>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(() => {
+                cycleThroughHeaderIcons();
+            });
+
+            const cycleThroughHeaderIcons = () => {
+                // Cycle through nav bar images
+                const images = [
+                    'glyphicon glyphicon-console',
+                    'glyphicon glyphicon-object-align-left',
+                    'glyphicon glyphicon-plus',
+                    'glyphicon glyphicon-cloud',
+                    'glyphicon glyphicon-search',
+                    'glyphicon glyphicon-globe',
+                    'glyphicon glyphicon-equalizer',
+
+                ];
+                let currentImageIndex = Math.floor((Math.random() * images.length));
+
+                /** Sets the current image to the image at the given index */
+                const displayImage = (imageIndex) => {    
+                    $('.navbar-brand span').attr('class', images[imageIndex]);
+                    currentImageIndex = imageIndex;
+                }
+
+                /** Displays the next image in the array */
+                const displayNextImage = () => {
+                    displayImage(currentImageIndex + 1);
+                }
+
+                // Display the first image
+                displayImage(currentImageIndex)
+
+                // Display a new image every 2 seconds
+                setInterval(displayNextImage, 2000);
+            };
+        </script>
+    </body>
+</html>
