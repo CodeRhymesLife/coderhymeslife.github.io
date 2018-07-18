@@ -82,7 +82,10 @@
                 let currentImageIndex = Math.floor((Math.random() * images.length));
 
                 /** Sets the current image to the image at the given index */
-                const displayImage = (imageIndex) => {    
+                const displayImage = (imageIndex) => {
+                    // Make sure we stay in range
+                    imageIndex = imageIndex % images.length;
+
                     $('.navbar-brand span').attr('class', images[imageIndex]);
                     currentImageIndex = imageIndex;
                 }
