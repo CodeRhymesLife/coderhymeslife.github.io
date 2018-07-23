@@ -1,0 +1,233 @@
+﻿<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link type="text/css" rel="stylesheet" href="styles/css/bootstrap.css" />
+		<link type="text/css" rel="stylesheet" href="styles/css/bootstrap-toggle.min.css" />
+		<link type="text/css" rel="stylesheet" href="styles/css/main.css" />
+
+		<script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/jquery.fittext.js"></script>
+		<script src="js/handlebars-v3.0.3.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap-toggle.min.js"></script>
+		<script src="js/d3.v3.min.js"></script>
+
+		<script src="js/aboutMeData.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/graph.js"></script>
+	</head>
+<body>
+    <!-- Modal -->
+    <div id="aboutMeDescriptionmodal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a href="#" class="close"><span aria-hidden="true">&times;</span></a>
+                    <h4 class="modal-title" id="myModalLabel"></h4>
+                </div>
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bigName noSelect">Ryan James</div>
+    <script type="text/javascript">
+        $(".bigName").fitText();
+    </script>
+
+    <a href="https://www.facebook.com/people/Ryan-James/2250837" target='_blank'>
+        <img class="socialIcon facebook" src="images/facebook_icon.png" />
+    </a>
+
+    <a href="https://www.github.com/drryanjames" target='_blank'>
+        <img class="socialIcon github" src="images/github_icon.png" />
+    </a>
+
+    <a href="https://www.linkedin.com/in/ryanjameshealth" target='_blank'>
+        <img class="socialIcon linkedIn" src="images/linkedin_icon.png" />
+    </a>
+
+    <div id="aboutMeSvg"></div>
+</body>
+
+
+
+	<!-- Handlebars templates -->
+	<script id="rowsOfContentTemplate" type="text/x-handlebars-template">
+		{{#content}}
+		<div class='rowOfContent'>
+			<image class="headerImage" src="images/{{image}}" />
+
+			<p>{{{text}}}</p>
+			<div class='clear'></div>
+		</div>
+		{{/content}}
+	</script>
+
+	<script id="cvTemplate" type="text/x-handlebars-template">
+		<img class="button printCV" src="images/printer.svg" onclick="printElement(document.getElementsByClassName('modal-body')[0]);"/>
+
+		<div class="clear"></div>
+
+		{{#header}}
+		<div class="header">
+			<label class="name">{{name}}</label>
+			<img class="self" src="images/professional pic front circle transparent background.png" />
+			<a class="website" href="{{website}}">{{website}}</a>
+			<a class="email" href="mailto:{{email}}">{{email}}</a>
+		</div>
+		{{/header}}
+
+		{{#content}}
+		<div class='rowOfContent'>
+			<p>
+				<ul class='sections'>
+					{{#sections}}
+						{{{renderResumeSection}}}
+					{{/sections}}
+				</ul>
+			</p>
+			<div class='clear'></div>
+		</div>
+		{{/content}}
+	</script>
+
+	<script id="educationSectionResumeTemplate" type="text/x-handlebars-template">
+		<li class='section'>
+			<header class='title'>{{title}}</header>
+			<ul class="sectionItems">
+				{{#items}}
+				<li class="sectionItem">
+					<header><label class="title">{{title}}</label><span class='when'> - {{when.start}} - {{when.end}}</span></header>
+					<header class='description'>{{where.institution}} | {{where.location}}</header>
+
+					<div class="description">
+						<div class="details">
+							<div class="summary">
+								{{#if description.summary}}
+								{{#each description.summary}}
+								<p>{{{this}}}</p>
+								{{/each}}
+								{{/if}}
+							</div>
+							<ul class="bullets">
+								{{#if description.bullets}}
+								{{#each description.bullets}}
+								<li>{{{this}}}</li>
+								{{/each}}
+								{{/if}}
+							</ul>
+						</div>
+					</div>
+				</li>
+				{{/items}}
+			</ul>
+		</li>
+	</script>
+
+	<script id="technicalSkillsSectionResumeTemplate" type="text/x-handlebars-template">
+		<li class='section'>
+			<header class='title'>{{title}}</header>
+			<ul class="sectionItems">
+				{{#items}}
+				<li class="sectionItem skills">
+					<span class='title'>{{title}}:</span>
+					<span class='description'>{{printArray items}}</span>
+				</li>
+				{{/items}}
+			</ul>
+		</li>
+	</script>
+	
+	<script id="awardsAndAchievementsSectionResumeTemplate" type="text/x-handlebars-template">
+		<li class='section'>
+			<header class='title'>{{title}}</header>
+			<ul class="sectionItems">
+				{{#items}}
+				<li class="sectionItem">
+					<span class='title'>
+						{{description.header}}
+						{{#if link}}
+								(<a href="{{link}}" target="_blank">link</a>)
+						{{/if}}
+					</span>
+					
+					<span class='description'>
+						<header>{{where.institution}}, {{where.location}} &nbsp;&nbsp;<span class='when'>{{when.start}} - {{when.end}}</span></header>
+						
+						<div class="summary">
+							{{#each description.summary}}
+							<p>{{{this}}}</p>
+							{{/each}}
+							
+							<div class="supplements">
+								{{#if description.supplements}}
+								{{#each description.supplements}}
+									{{#if this.video}}
+										<div class='aspect-ratio-container'><iframe src='{{this.video}}' frameborder='0' allowfullscreen></iframe></div>
+									{{/if}}
+									{{#if this.img}}
+										<span><img style="max-width: 100%;" src='{{this.img}}'/></span>
+										<br>
+									{{/if}}
+								{{/each}}
+								{{/if}}
+							</div>
+						</div>
+					</span>
+				</li>
+				{{/items}}
+			</ul>
+		</li>
+	</script>
+	
+	<script id="detailedDescriptionSectionResumeTemplate" type="text/x-handlebars-template">
+		<li class='section'>
+			<header class='title'>{{title}}</header>
+			<ul class="sectionItems">
+				{{#items}}
+				<li class="sectionItem">
+					<header class='title'>
+						{{where.institution}} | {{where.location}}
+						{{#if link}}
+								{{#if image}}
+									<a href="{{link}}" target="_blank">
+										<img class="logo" src="images/{{image}}" />
+									</a>
+								{{else}}
+									(<a href="{{link}}" target="_blank">link</a>)
+								{{/if}}
+						{{/if}}
+					</header>
+					<div class="description">
+						<header class='description'>
+							{{description.header}}
+							{{#if when}}
+							&nbsp;&nbsp;<span class='when'><span class="start">{{when.start}}</span> - {{when.end}}</span>
+							{{/if}}
+						</header>
+
+						<div class="details">
+							<div class="summary">
+								{{#if description.summary}}
+								{{#each description.summary}}
+								<p>{{{this}}}</p>
+								{{/each}}
+								{{/if}}
+							</div>
+							<ul class="bullets">
+								{{#each description.bullets}}
+								<li>{{{this}}}</li>
+								{{/each}}
+							</ul>
+						</div>
+					</div>
+				</li>
+				{{/items}}
+			</ul>
+		</li>
+	</script>
+</html>
