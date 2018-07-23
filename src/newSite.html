@@ -19,15 +19,15 @@
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#">
                         <span class="glyphicon" aria-hidden="true"></span>
-                        <a class="navbar-brand" href="#">Ryan James</a> 
+                        <a class="navbar-brand" href="#" onclick="showPage('aboutMe');">Ryan James</a> 
                     </a>
                 </div>
 
                 <div class="navbar-right"> 
                     <ul class="nav navbar-nav">
-                        <li><a href="#">Software</a></li>
-                        <li><a href="#">Healthcare</a></li>
-                        <li><a href="#">Business</a></li>
+                        <li><a href="#" onclick="showPage('software')">Software</a></li>
+                        <li><a href="#" onclick="showPage('healthcare')">Healthcare</a></li>
+                        <li><a href="#" onclick="showPage('entrepreneurship')">Entrepreneurship</a></li>
                     </ul>
                 </div>
 
@@ -35,72 +35,167 @@
         </nav>
 
         <main>
-            <div class="container">
-                <div class="page aboutMe">
-                    <h1>About Me</h1>
-                    <p>I enjoy understanding health problems, developing solutions, and building relationships. My background is in:</p>
-                        <div class="row interests">
-                            <div class="col-sm-4">
-                                <span class="glyphicon glyphicon-console" aria-hidden="true"></span>
-                                <h4>Software</h4>
-                            </div>
+        <div class="container">
+            <div class="page aboutMe">
+                <h1>About Me</h1>
+                <p>
+                    I love technology--using it, building it, but most of all watching others benefit.
+                    I became a computer scientists because I enjoy solving problems with computers. I like to think software languages and frameworks are my paintbrushes.
+                    As I near the end of my dissertation, it's clear that my passion involves painting healthcare technology that solves problems, with a user-centered design approach.
+                    There are so many ways to go about this. I'm using mixed reality, sensors, 3D models, 3D printing, and entrepreneurship to understand and commercialize new ways to treat cardiac disease. Along the way, I'm absorbing as much as I can about machine learning and artificial intelligence to develop decision support systems that improve clinical outcomes.
+                    Please click one of the links below to learn more about me.
+                </p>
 
-                            <div class="col-sm-4">
-                                <span class="glyphicon glyphicon-object-align-left" aria-hidden="true"></span>
-                                <h4>Healthcare</h4>
-                            </div>
+                <br/>
 
-                            <div class="col-sm-4">
-                                <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
-                                <h4>Entrepreneurship</h4>
-                            </div>
+                <div class="row interests">
+                    <div class="col-sm-4">
+                        <div class="interest" onclick="showPage('software')">
+                            <span class="glyphicon glyphicon-console" aria-hidden="true"></span>
+                            <h4>Software<br/>Engineering</h4>
                         </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="interest" onclick="showPage('healthcare');">
+                            <span class="glyphicon glyphicon-object-align-left" aria-hidden="true"></span>
+                            <h4>Healthcare<br/>Technology</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="interest" onclick="showPage('entrepreneurship')">
+                            <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                            <h4>Entrepreneurship</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </main>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <div class="page software">
+                <h1>Software Engineering</h1>
+                <p>
+                    When I was younger I wanted to be an architect. Legos and K'Nex were my entry into creativity. When I think about the structures I built then it reminds me of why I love building software. There's something special about using the manifestation of a dream, and the things you learn along the way. My foundation is at the University of Michigan where I learned fundamentals (Go Blue!!!). Shortly after I began working at Microsoft where I learned about my love for language, how teams function, how to be a valuable contributor, and how to build end-to-end services, among many other things. I'm in my final year of the Biomedical and Health Informatics PhD program at the University of Washington where I've applied what I've learned to build a mixed reality based catheterization simulator built on a custom RESTflull 3D modeling service. During it all I've had fantastic experiences learning from others, teaching and collaborating, and I look forward to what's ahead. My mission over the next few months is to open source my dissertation work so others can benefit like I've benefitted from the open source community. I'm excited to contribute a secure and extendable 3D model service, and a mixed reality cardiac catheterization simulator. I enjoy building relationships, building teams and building tools, and I can't wait to create what's next.
+                </p>
+
+                <div class="interests">
+                    <div class="interest">
+                        <h4>My GitHub</h4>
+                        <img class="github" src="../images/github_icon.png" href="www.github.com/drryanjames" />
+                     </div>
+                </div>
+            </div>
+
+            <div class="page healthcare">
+                <h1>Healthcare Technology</h1>
+                <p>
+                    Lorem Ipsum
+                </p>
+            </div>
+
+            <div class="page entrepreneurship">
+                <h1>Entrepreneurship</h1>
+                <p>
+                    Lorem Ipsum
+                </p>
+            </div>
+         </div>
+        </main>
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
         <script>
-            $(document).ready(() => {
-                cycleThroughHeaderIcons();
-            });
+$(document).ready(() => {
+    showPageFromUrl();
+    cycleThroughHeaderIcons();
+});
 
-            const cycleThroughHeaderIcons = () => {
-                // Cycle through nav bar images
-                const images = [
-                    'glyphicon glyphicon-console',
-                    'glyphicon glyphicon-object-align-left',
-                    'glyphicon glyphicon-plus',
-                    'glyphicon glyphicon-cloud',
-                    'glyphicon glyphicon-search',
-                    'glyphicon glyphicon-globe',
-                    'glyphicon glyphicon-equalizer',
+    // A regex of valid pages
+    const validPages = /aboutMe|software|healthcare|entrepreneurship/;
 
-                ];
-                let currentImageIndex = Math.floor((Math.random() * images.length));
+    // The page to show by default
+    const defaultPage = 'aboutMe';
 
-                /** Sets the current image to the image at the given index */
-                const displayImage = (imageIndex) => {
-                    // Make sure we stay in range
-                    imageIndex = imageIndex % images.length;
+    // Shows a page based on the value after the # in the url
+    const showPageFromUrl = () => {
+        const pageInUrl = window.location.hash.substr(1);
+        console.log(`Value after #: '${pageInUrl}'`);
 
-                    $('.navbar-brand span').attr('class', images[imageIndex]);
-                    currentImageIndex = imageIndex;
-                }
+        const pageToShow = validPages.test(pageInUrl) ? pageInUrl : defaultPage;
+        showPage(pageToShow);
+    };
 
-                /** Displays the next image in the array */
-                const displayNextImage = () => {
-                    displayImage(currentImageIndex + 1);
-                }
+    // Shows the given page
+    const showPage = (pageToShow) => {
+        console.log(`Showing page '${pageToShow}'`);
 
-                // Display the first image
-                displayImage(currentImageIndex)
+        // Show the page
+        const show = () => {
+            // Update the url and scroll to the top
+            var scrollmem = $('html,body').scrollTop();
+            window.location.hash = pageToShow;
+            $('html,body').scrollTop(scrollmem);
 
-                // Display a new image every 2 seconds
-                setInterval(displayNextImage, 2000);
-            };
+            // Fade in the page
+            $(`.${pageToShow}`).fadeIn(1000);
+        };
+
+        // Hide all visible pages then show the given page
+        const hideThenShow = () => {
+            $('.page:visible').fadeOut(400, show);
+        };
+
+        // If there are pages visible, first hide them then show the given page
+        if($('.page:visible').length > 0) {
+            hideThenShow();
+        } else { // Otherwise just show the page
+            show();
+        }
+    };
+
+    const cycleThroughHeaderIcons = () => {
+    // Cycle through nav bar images
+    const images = [
+    'glyphicon glyphicon-console',
+        'glyphicon glyphicon-object-align-left',
+        'glyphicon glyphicon-plus',
+        'glyphicon glyphicon-cloud',
+        'glyphicon glyphicon-search',
+        'glyphicon glyphicon-globe',
+        'glyphicon glyphicon-equalizer',
+
+];
+    let currentImageIndex = Math.floor((Math.random() * images.length));
+
+    /** Sets the current image to the image at the given index */
+    const displayImage = (imageIndex) => {
+    // Make sure we stay in range
+    imageIndex = imageIndex % images.length;
+
+    $('.navbar-brand span').attr('class', images[imageIndex]);
+    currentImageIndex = imageIndex;
+}
+
+    /** Displays the next image in the array */
+    const displayNextImage = () => {
+    displayImage(currentImageIndex + 1);
+}
+
+    // Display the first image
+    displayImage(currentImageIndex)
+
+    // Display a new image every 2 seconds
+    setInterval(displayNextImage, 2000);
+};
         </script>
     </body>
 </html>
