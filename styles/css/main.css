@@ -42,3 +42,7 @@ main {
 .page.software .interests .interest img.github:hover {
     background-color: #D8D8D8;
 }
+
+.page.healthcare .videoContainer {
+    text-align: center;
+}
