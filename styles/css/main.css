@@ -1,7 +1,3 @@
-main {
-    margin-top: 50px; 
-}
-
 .navbar {
     background-color: white;
 }
@@ -45,4 +41,10 @@ main {
 
 .page.healthcare .videoContainer {
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .page.aboutMe .interests .interest, .page.healthcare .videoContainer {
+        margin: 20px;
+    }
 }
