@@ -82,6 +82,43 @@
     clear: both;
 }
 
+.footer, .footer-buffer {
+    height: 60px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  line-height: 60px;
+  background-color: #F8F8F8;
+  opacity: 0.7;
+}
+
+.footer:hover {
+    opacity: 1;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.footer ul, .footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer a, .footer a img {
+    height: 50px;
+    width: 50px;
+}
+
+.footer a, .footer a img {
+    background-color: #808080;
+}
+
 @media (max-width: 1200px) {
     .page.software .experiences .row-eq-height {
         display: block;
