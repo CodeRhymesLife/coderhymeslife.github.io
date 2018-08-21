@@ -44,15 +44,21 @@
     margin-right: auto;
 }
 
-.page.software .experiences .icon img {
-    text-align: center;
+.page.software .experience {
+    margin: 30px 0;
+}
+
+.page.software .experiences .icon {
+    display: flex;
+    align-items: center;
     vertical-align: middle;
 }
 
-.page.software .experiences .icon img {
+.page.software .experiences .icon img,
+.page.software .experiences .icon a {
     display: block;
     width: 100%;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .page.software .experience .explination .name {
@@ -69,6 +75,10 @@
 }
 
 @media (max-width: 1200px) {
+    .page.software .experiences .row-eq-height {
+        display: block;
+    }
+
     .page.software .experiences .icon img {
         max-width: 300px;
     }
