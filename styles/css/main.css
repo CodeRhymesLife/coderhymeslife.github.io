@@ -39,8 +39,38 @@
     background-color: #D8D8D8;
 }
 
+.page.software table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page.software .experiences .icon img {
+    text-align: center;
+}
+
+.page.software .experiences .icon img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.page.software .experience .explination .name {
+    text-align: center;
+    background-color: #F8F8F8;
+}
+
 .page.healthcare .videoContainer {
     text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+@media (max-width: 1200px) {
+    .page.software .experiences .icon img {
+        max-width: 300px;
+    }
 }
 
 @media (max-width: 768px) {
